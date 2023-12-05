@@ -1,0 +1,73 @@
+.thumbs-slider {
+    user-select: none;
+
+    &__featured {
+        margin-bottom: 1rem;
+    }
+
+    &__featured .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 40 / 37;
+        height: 37rem;
+        background-color: $color-white;
+    }
+
+    &__featured &__image {
+        object-fit: contain;
+        max-height: 100%;
+        max-width: 100%;
+        cursor: zoom-in;
+
+        @include breakpoint($mobile) {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+
+    &__thumbs .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 14 / 13;
+        height: 9rem;
+        background-color: $color-white;
+        border-bottom: .2rem solid transparent;
+        transition: border-color .2s ease;
+
+        &.swiper-slide-thumb-active {
+            border-bottom: .2rem solid $color-yellow;
+        }
+
+        @include breakpoint($mobile) {
+            height: 12rem;
+        }
+    }
+
+    &__thumbs .swiper-button-prev,
+    &__thumbs .swiper-button-next {
+        color: $color-dark;
+        text-shadow: 0 0 .6rem rgba(0, 0, 0, 0.2);
+
+        &::after {
+            font-size: 2.8rem;
+            font-weight: 700;
+        }
+
+        @include breakpoint($mobile) {
+            display: none;
+        }
+    }
+
+    &__thumbs .swiper-button-disabled {
+        opacity: 0;
+    }
+
+    &__thumbs &__image {
+        object-fit: contain;
+        height: 100%;
+        max-width: 100%;
+        cursor: pointer;
+    }
+}

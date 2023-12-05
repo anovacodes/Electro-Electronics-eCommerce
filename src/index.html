@@ -1,0 +1,2408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include("./partials/head.html", {
+        "title": "Electro - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": true
+        })
+
+        <div class="hero" style="background-image: url(assets/images/hero-bg.jpg)">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="swiper hero-slider" id="hero-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="hero-slider__item">
+                                    <div class="hero-slider__info">
+                                        <h2 class="hero-slider__title">THE NEW STANDARD</h2>
+                                        <h3 class="hero-slider__subtitle">UNdER FAVORABLE SMARTWATCHES</h3>
+        
+                                        <div class="hero-slider__price">
+                                            <div>From</div>
+                                            <div class="hero-slider__total">
+                                                <sup>$</sup>
+                                                <span>749</span>
+                                                <sup>99</sup>
+                                            </div>
+                                        </div>
+        
+                                        <a class="hero-slider__link" href="./product.html">Start Buying</a>
+                                    </div>
+        
+                                    <div class="hero-slider__image">
+                                        <img src="assets/images/products/smartwatches.png" alt="Smart Watch">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="hero-slider__item">
+                                    <div class="hero-slider__info">
+                                        <h2 class="hero-slider__title">THE NEW STANDARD</h2>
+                                        <h3 class="hero-slider__subtitle">UNdER FAVORABLE Devices</h3>
+        
+                                        <div class="hero-slider__price">
+                                            <div>From</div>
+                                            <div class="hero-slider__total">
+                                                <sup>$</sup>
+                                                <span>749</span>
+                                                <sup>99</sup>
+                                            </div>
+                                        </div>
+        
+                                        <a class="hero-slider__link" href="./product.html">Start Buying</a>
+                                    </div>
+        
+                                    <div class="hero-slider__image">
+                                        <img src="assets/images/products/device.png" alt="Device">
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="hero-slider__item">
+                                    <div class="hero-slider__info">
+                                        <h2 class="hero-slider__title">THE NEW STANDARD</h2>
+                                        <h3 class="hero-slider__subtitle">UNdER FAVORABLE Smartphones</h3>
+        
+                                        <div class="hero-slider__price">
+                                            <div>From</div>
+                                            <div class="hero-slider__total">
+                                                <sup>$</sup>
+                                                <span>749</span>
+                                                <sup>99</sup>
+                                            </div>
+                                        </div>
+        
+                                        <a class="hero-slider__link" href="./product.html">Start Buying</a>
+                                    </div>
+        
+                                    <div class="hero-slider__image">
+                                        <img src="assets/images/products/smartphones.png" alt="Smartphones">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="swiper-pagination hero-slider__pagination" id="hero-slider__pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mini-billboards">
+            <div class="container">
+                <ul class="mini-billboards__list">
+                    <li class="mini-billboards__item">
+                        <a class="mini-billboards__link" href="#">
+                            <div class="mini-billboards__media">
+                                <img src="assets/images/products/camera-1.png" alt="Camera">
+                            </div>
+        
+                            <div class="mini-billboards__info">
+                                <h4 class="mini-billboards__title">CATCH BIG <b>DEALS</b> ON THE CAMERAS</h4>
+                                <div class="mini-billboards__actions">
+                                    <span class="mini-billboards__text">Shop now</span>
+                                    <div class="mini-billboards__icon"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="mini-billboards__item">
+                        <a class="mini-billboards__link" href="#">
+                            <div class="mini-billboards__media">
+                                <img src="assets/images/products/laptop.png" alt="Camera">
+                            </div>
+        
+                            <div class="mini-billboards__info">
+                                <h4 class="mini-billboards__title">TABLETS, SMARTPHONES <span>AND MORE</span></h4>
+                                <div class="mini-billboards__actions">
+                                    <span class="mini-billboards__text mini-billboards__text_divided">
+                                        <span>UP TO</span>
+                                        <span>70%</span>
+                                    </span>
+                                    <div class="mini-billboards__icon"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+        
+                    <li class="mini-billboards__item">
+                        <a class="mini-billboards__link" href="#">
+                            <div class="mini-billboards__media">
+                                <img src="assets/images/products/pc-2.png" alt="Camera">
+                            </div>
+        
+                            <div class="mini-billboards__info">
+                                <h4 class="mini-billboards__title">SHOP THE <b>HOTTEST</b> PRODUCTS</h4>
+                                <div class="mini-billboards__actions">
+                                    <span class="mini-billboards__text">Shop now</span>
+                                    <div class="mini-billboards__icon"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="deals">
+            <div class="container">
+                <div class="deals__inner">
+                    <div class="special-card" id="special-card" data-expires="08:19:54">
+                        <div class="special-card__header">
+                            <span class="special-card__type">Special Offer</span>
+        
+                            <div class="special-card__discount">
+                                <span>Save <b>$120</b></span>
+                            </div>
+                        </div>
+        
+                        <a class="special-card__media" href="#">
+                            <img src="assets/images/products/controller-1.png" alt="Product Image">
+                        </a>
+        
+                        <a class="special-card__title" href="#">
+                            <h4>Game Console Controller + USB 3.0 Cable</h4>
+                        </a>
+        
+                        <div class="special-card__price">
+                            <span>$99,00</span>
+                            <span>$79,00</span>
+                        </div>
+        
+                        <div class="special-card__progress progress-special">
+                            <div class="progress-special__header">
+                                <div class="progress-special__text">
+                                    <span>Availavle:</span>
+                                    <span>6</span>
+                                </div>
+        
+                                <div class="progress-special__text">
+                                    <span>Already Sold:</span>
+                                    <span>28</span>
+                                </div>
+                            </div>
+        
+                            <div class="progress-special__progress">
+                                <div class="progress-special__current"></div>
+                            </div>
+                        </div>
+        
+                        <div class="special-card__time time-special">
+                            <div class="time-special__text">Hurry Up! Offer ends in:</div>
+        
+                            <div class="time-special__time">
+                                <div class="time-special__item">
+                                    <div class="time-special__number">
+                                        <span id="special-card__hours">08</span>
+                                    </div>
+                                    <span class="time-special__unit">Hours</span>
+                                </div>
+        
+                                <div class="time-special__item">
+                                    <div class="time-special__number">
+                                        <span id="special-card__minutes">19</span>
+                                    </div>
+                                    <span class="time-special__unit">MINS</span>
+                                </div>
+        
+                                <div class="time-special__item">
+                                    <div class="time-special__number">
+                                        <span id="special-card__seconds">54</span>
+                                    </div>
+                                    <span class="time-special__unit">Secs</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="tabs" id="tabs-1">
+                        <div class="tabs__header">
+                            <div class="tabs__tab active" data-id="1">Featured</div>
+                            <div class="tabs__tab" data-id="2">On Sale</div>
+                            <div class="tabs__tab" data-id="3">Top Rated</div>
+                        </div>
+        
+                        <div class="tabs__body">
+                            <div class="tabs__item active" data-id="1">
+                                <div class="products products_home">
+                                    <ul class="products__list">
+                                        <li class="products__item">
+                                            
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Smartwatches",
+                                                "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                "img": "assets/images/products/watch.png",
+                                                "newPrice": "$129,00",
+                                                "oldPrice": "$1149,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+
+                                        </li>
+        
+                                        <li class="products__item">
+
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Smartphones",
+                                                "title": "Smartphone 6S 32GB LTE",
+                                                "img": "assets/images/products/smartphone-4.png",
+                                                "newPrice": "$255,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "TV & Audio",
+                                                "title": "Widescreen NX Mini F1 SMART NX",
+                                                "img": "assets/images/products/tv.png",
+                                                "newPrice": "$489,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Headphones",
+                                                "title": "Purple Solo 2 Wireless",
+                                                "img": "assets/images/products/headphone.png",
+                                                "newPrice": "$129,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Printers",
+                                                "title": "Full Color LaserJet Pro M452dn",
+                                                "img": "assets/images/products/printer.png",
+                                                "newPrice": "$242,15",
+                                                "oldPrice": "$312,55",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Tablets",
+                                                "title": "Tablet White EliteBook Revolve 810 G2",
+                                                "img": "assets/images/products/tablet-2.png",
+                                                "newPrice": "$244,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs__item" data-id="2">
+                                <div class="products products_home">
+                                    <ul class="products__list">
+                                        <li class="products__item">
+
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Audio Speakers",
+                                                "title": "Wireless Audio System Multiroom 360",
+                                                "img": "assets/images/products/device.png",
+                                                "newPrice": "$233,00",
+                                                "oldPrice": "$622,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Tablets",
+                                                "title": "Tablet White EliteBook Revolve 810 G2",
+                                                "img": "assets/images/products/tablet-2.png",
+                                                "newPrice": "$244,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Smartphones",
+                                                "title": "Smartphone 6S 32GB LTE",
+                                                "img": "assets/images/products/smartphone-4.png",
+                                                "newPrice": "$255,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Printers",
+                                                "title": "Full Color LaserJet Pro M452dn",
+                                                "img": "assets/images/products/printer.png",
+                                                "newPrice": "$242,15",
+                                                "oldPrice": "$312,55",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "TV & Audio",
+                                                "title": "Widescreen NX Mini F1 SMART NX",
+                                                "img": "assets/images/products/tv.png",
+                                                "newPrice": "$489,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Headphones",
+                                                "title": "Purple Solo 2 Wireless",
+                                                "img": "assets/images/products/headphone.png",
+                                                "newPrice": "$129,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs__item" data-id="3">
+                                <div class="products products_home">
+                                    <ul class="products__list">
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Smartphones",
+                                                "title": "Smartphone 6S 32GB LTE",
+                                                "img": "assets/images/products/smartphone-4.png",
+                                                "newPrice": "$255,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Tablets",
+                                                "title": "Tablet White EliteBook Revolve 810 G2",
+                                                "img": "assets/images/products/tablet-2.png",
+                                                "newPrice": "$244,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Smartwatches",
+                                                "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                "img": "assets/images/products/watch.png",
+                                                "newPrice": "$129,00",
+                                                "oldPrice": "$1149,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "TV & Audio",
+                                                "title": "Widescreen NX Mini F1 SMART NX",
+                                                "img": "assets/images/products/tv.png",
+                                                "newPrice": "$489,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Headphones",
+                                                "title": "Purple Solo 2 Wireless",
+                                                "img": "assets/images/products/headphone.png",
+                                                "newPrice": "$129,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+        
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Printers",
+                                                "title": "Full Color LaserJet Pro M452dn",
+                                                "img": "assets/images/products/printer.png",
+                                                "newPrice": "$242,15",
+                                                "oldPrice": "$312,55",
+                                                "classes": {
+                                                    "cardType": "product-card_oneline",
+                                                }
+                                            })
+        
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="deals deals_full">
+            <div class="container">
+                <div class="deals__inner">
+                    <div class="tabs tabs_deals_full" id="tabs-2">
+                        <div class="tabs__header">
+                            <div class="tabs__tab active" data-id="1">Best Deals</div>
+                            <div class="tabs__tab" data-id="2">TV & Video</div>
+                            <div class="tabs__tab" data-id="3">Cameras</div>
+                            <div class="tabs__tab" data-id="4">Audio</div>
+                            <div class="tabs__tab" data-id="5">Cell Phones</div>
+                        </div>
+        
+                        <div class="tabs__body">
+                            <div class="tabs__item active" data-id="1">
+                                <div class="swiper products-slider" id="products-tab-slider-1">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+        
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>       
+                                    
+                                    <div class="swiper-pagination products-slider__pagination" id="products-tab-slider__pagination-1"></div>
+                                </div>                        
+                            </div>
+        
+                            <div class="tabs__item" data-id="2">
+                                <div class="swiper products-slider" id="products-tab-slider-2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+        
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+        
+                                    <div class="swiper-pagination products-slider__pagination" id="products-tab-slider__pagination-2"></div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__item" data-id="3">
+                                <div class="swiper products-slider" id="products-tab-slider-3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+        
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="swiper-pagination products-slider__pagination" id="products-tab-slider__pagination-3"></div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__item" data-id="4">
+                                <div class="swiper products-slider" id="products-tab-slider-4">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+        
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="swiper-pagination products-slider__pagination" id="products-tab-slider__pagination-4"></div>
+                                </div>
+                            </div>
+
+                            <div class="tabs__item" data-id="5">
+                                <div class="swiper products-slider" id="products-tab-slider-5">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+        
+                                        <div class="swiper-slide">
+                                            <div class="products products_deals_full">
+                                                <ul class="products__list">
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Smartwatches",
+                                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                            "img": "assets/images/products/watch.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_big",
+                                                                "productButtonType": "product-card__cart_extended"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Tablets",
+                                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                                            "img": "assets/images/products/tablet-2.png",
+                                                            "newPrice": "$244,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Printers",
+                                                            "title": "Full Color LaserJet Pro M452dn",
+                                                            "img": "assets/images/products/printer.png",
+                                                            "newPrice": "$242,15",
+                                                            "oldPrice": "$312,55",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+                    
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "Headphones",
+                                                            "title": "Purple Solo 2 Wireless",
+                                                            "img": "assets/images/products/headphone.png",
+                                                            "newPrice": "$129.00",
+                                                            "oldPrice": "$1149,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                    <li class="products__item">
+
+                                                        @@include("./partials/product-card.html", {
+                                                            "collection": "TV & Audio",
+                                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                                            "img": "assets/images/products/tv.png",
+                                                            "newPrice": "$489,00",
+                                                            "classes": {
+                                                                "cardType": "product-card_oneline"
+                                                            }
+                                                        })
+                    
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+            
+                                    <div class="swiper-pagination products-slider__pagination" id="products-tab-slider__pagination-5"></div>        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="products-section__header">
+                    <h2 class="products-section__title">Bestsellers</h2>
+
+                    <nav class="products-section__nav nav-products">
+                        <ul class="nav-products__list">
+                            <li class="nav-products__item active">
+                                <a class="nav-products__link" href="#">Top 20</a>
+                            </li>
+
+                            <li class="nav-products__item">
+                                <a class="nav-products__link" href="#">Phones & Tablets</a>
+                            </li>
+
+                            <li class="nav-products__item">
+                                <a class="nav-products__link" href="#">Laptops & Computers</a>
+                            </li>
+
+                            <li class="nav-products__item">
+                                <a class="nav-products__link" href="#">Video Cameras</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="swiper products-slider" id="products-slider-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="products products_home">
+                                <ul class="products__list">
+                                    <li class="products__item">
+                                        
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartwatches",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+
+                                    </li>
+    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Smartphone 6S 32GB LTE",
+                                            "img": "assets/images/products/smartphone-4.png",
+                                            "newPrice": "$255,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "TV & Audio",
+                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                            "img": "assets/images/products/tv.png",
+                                            "newPrice": "$489,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Headphones",
+                                            "title": "Purple Solo 2 Wireless",
+                                            "img": "assets/images/products/headphone.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Printers",
+                                            "title": "Full Color LaserJet Pro M452dn",
+                                            "img": "assets/images/products/printer.png",
+                                            "newPrice": "$242,15",
+                                            "oldPrice": "$312,55",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Tablets",
+                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                            "img": "assets/images/products/tablet-2.png",
+                                            "newPrice": "$244,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="swiper-slide">
+                                <div class="products products_home">
+                                    <ul class="products__list">
+
+                                        <li class="products__item">
+    
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Tablets",
+                                                "title": "Tablet White EliteBook Revolve 810 G2",
+                                                "img": "assets/images/products/tablet-2.png",
+                                                "newPrice": "$244,00",
+                                                "classes": {
+                                                    "cardType": "",
+                                                }
+                                            })
+        
+                                        </li>
+
+                                        <li class="products__item">
+    
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Smartphones",
+                                                "title": "Smartphone 6S 32GB LTE",
+                                                "img": "assets/images/products/smartphone-4.png",
+                                                "newPrice": "$255,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "",
+                                                }
+                                            })
+        
+                                        </li>
+        
+                                        <li class="products__item">
+    
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "TV & Audio",
+                                                "title": "Widescreen NX Mini F1 SMART NX",
+                                                "img": "assets/images/products/tv.png",
+                                                "newPrice": "$489,00",
+                                                "classes": {
+                                                    "cardType": "",
+                                                }
+                                            })
+        
+                                        </li>
+
+                                        <li class="products__item">
+                                            
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Smartwatches",
+                                                "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                                "img": "assets/images/products/watch.png",
+                                                "newPrice": "$129,00",
+                                                "oldPrice": "$1149,00",
+                                                "classes": {
+                                                    "cardType": "",
+                                                }
+                                            })
+    
+                                        </li>
+        
+                                        <li class="products__item">
+    
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Printers",
+                                                "title": "Full Color LaserJet Pro M452dn",
+                                                "img": "assets/images/products/printer.png",
+                                                "newPrice": "$242,15",
+                                                "oldPrice": "$312,55",
+                                                "classes": {
+                                                    "cardType": "",
+                                                }
+                                            })
+        
+                                        </li>
+
+                                        <li class="products__item">
+    
+                                            @@include("./partials/product-card.html", {
+                                                "collection": "Headphones",
+                                                "title": "Purple Solo 2 Wireless",
+                                                "img": "assets/images/products/headphone.png",
+                                                "newPrice": "$129,00",
+                                                "oldPrice": "$312,00",
+                                                "classes": {
+                                                    "cardType": "",
+                                                }
+                                            })
+        
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="products products_home">
+                                <ul class="products__list">    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "TV & Audio",
+                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                            "img": "assets/images/products/tv.png",
+                                            "newPrice": "$489,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+
+                                    <li class="products__item">
+                                        
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartwatches",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+
+                                    </li>
+    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Headphones",
+                                            "title": "Purple Solo 2 Wireless",
+                                            "img": "assets/images/products/headphone.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Smartphone 6S 32GB LTE",
+                                            "img": "assets/images/products/smartphone-4.png",
+                                            "newPrice": "$255,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Tablets",
+                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                            "img": "assets/images/products/tablet-2.png",
+                                            "newPrice": "$244,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+    
+                                    <li class="products__item">
+
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Printers",
+                                            "title": "Full Color LaserJet Pro M452dn",
+                                            "img": "assets/images/products/printer.png",
+                                            "newPrice": "$242,15",
+                                            "oldPrice": "$312,55",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+    
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination products-slider__pagination products-slider__pagination_section" id="products-slider__pagination-1"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="banner">
+            <div class="container">
+                <a class="banner__link" href="#">
+                    <img class="banner__image" src="assets/images/banner.png" alt="Banner" >
+                </a>
+            </div>
+        </div>
+
+        <section class="products-section">
+            <div class="container">
+                <div class="products-section__header">
+                    <h2 class="products-section__title">Recently Viewed</h2>
+
+                    <div class="products-section-controls">
+                        <div class="products-section-controls__arrow" id="products-section-arrow-prev"></div>
+                        <div class="products-section-controls__arrow" id="products-section-arrow-next"></div>
+                    </div>
+                </div>
+
+                <div class="swiper products-slider" id="products-slider-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "Tablets",
+                                "title": "Tablet White EliteBook Revolve 810 G2",
+                                "img": "assets/images/products/tablet-2.png",
+                                "newPrice": "$244,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "Smartphones",
+                                "title": "Smartphone 6S 32GB LTE",
+                                "img": "assets/images/products/smartphone-4.png",
+                                "newPrice": "$255,00",
+                                "oldPrice": "$312,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "TV & Audio",
+                                "title": "Widescreen NX Mini F1 SMART NX",
+                                "img": "assets/images/products/tv.png",
+                                "newPrice": "$489,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "Smartwatches",
+                                "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                "img": "assets/images/products/watch.png",
+                                "newPrice": "$129,00",
+                                "oldPrice": "$1149,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "Printers",
+                                "title": "Full Color LaserJet Pro M452dn",
+                                "img": "assets/images/products/printer.png",
+                                "newPrice": "$242,15",
+                                "oldPrice": "$312,55",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "Headphones",
+                                "title": "Purple Solo 2 Wireless",
+                                "img": "assets/images/products/headphone.png",
+                                "newPrice": "$129,00",
+                                "oldPrice": "$312,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "Smartwatches",
+                                "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                "img": "assets/images/products/watch.png",
+                                "newPrice": "$129,00",
+                                "oldPrice": "$1149,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "Smartphones",
+                                "title": "Smartphone 6S 32GB LTE",
+                                "img": "assets/images/products/smartphone-4.png",
+                                "newPrice": "$255,00",
+                                "oldPrice": "$312,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+
+                        <div class="swiper-slide">
+                            @@include("./partials/product-card.html", {
+                                "collection": "TV & Audio",
+                                "title": "Widescreen NX Mini F1 SMART NX",
+                                "img": "assets/images/products/tv.png",
+                                "newPrice": "$489,00",
+                                "classes": {
+                                    "cardType": "product-card_oneline",
+                                }
+                            })
+                        </div>
+                    </div>
+
+                    <div class="swiper-pagination products-slider__pagination products-slider__pagination_section" id="products-slider__pagination-2"></div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+    </div>
+</body>
+</html>
+
+

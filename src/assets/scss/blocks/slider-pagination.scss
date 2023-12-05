@@ -1,0 +1,15 @@
+.swiper-pagination-bullet {
+    width: .8rem !important;
+    height: .8rem !important;
+    background-color: #bcbcbc !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    border-radius: 8px !important;
+    width: 3rem !important;
+    height: .8rem !important;
+    background-color: $color-yellow !important;
+    opacity: 1;
+    transition: width .25s ease;
+}

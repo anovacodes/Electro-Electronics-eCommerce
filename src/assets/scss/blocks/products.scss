@@ -1,0 +1,278 @@
+.products {
+    &_description .mini-description {
+        display: block;
+    }
+
+    &_stars .star-rating {
+        display: inline-block;
+    }
+
+    &_view_grid-extended &__list {
+        grid-template-columns: repeat(3, 1fr);
+
+        @include breakpoint($mobile) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint($mobileSmall) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &_view_grid-extended &__item {
+        &:nth-child(3n)::after {
+            display: none;
+
+            @include breakpoint($mobile) {
+                display: block;
+            }
+        }
+
+        &:nth-child(even)::after {
+            @include breakpoint($mobile) {
+                display: none;
+            }
+        }
+
+        &:nth-child(odd)::after {
+            @include breakpoint($mobileSmall) {
+                display: none;
+            }
+        }
+    }
+
+    &_view_grid-extended .product-card__image {
+        height: 23rem !important;
+    }
+
+    &_view_grid-extended .product-card__shadow {
+        height: 59rem !important;
+    }
+
+    &_view_grid .rating {
+        display: none;
+    }
+
+    &_view_grid &__list {
+        grid-template-columns: repeat(4, 1fr);
+
+        @include breakpoint($mobile) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include breakpoint($mobileSmall) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint($mobileDino) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &_view_grid &__item {
+        &:nth-child(4n)::after {
+            display: none;
+
+            @include breakpoint($mobile) {
+                display: block;
+            }
+        }
+
+        &:nth-child(3n)::after {
+            @include breakpoint($mobile) {
+                display: none;
+            }
+
+            @include breakpoint($mobileSmall) {
+                display: block;
+            }
+        }
+
+        &:nth-child(even)::after {
+            @include breakpoint($mobileSmall) {
+                display: none;
+            }
+        }
+
+        &:nth-child(odd)::after {
+            @include breakpoint($mobileDino) {
+                display: none;
+            }
+        }
+    }
+
+    &_view_list .product-card__footer-reserve {
+        display: flex !important;
+        grid-area: 7 / 3 / 8 / 4 !important;
+
+        @include breakpoint($mobileMedium) {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &_view_list .product-card__shadow {
+        display: none !important;
+    }
+
+    &_view_list .product-card__bottom {
+        flex-direction: column;
+        padding-top: 1rem;
+        grid-area: 3 / 3 / 8 / 4 !important;
+        border: none !important;
+
+        @include breakpoint($mobileMedium) {
+            width: 100%;
+        }
+    }
+
+    &_view_list .product-card_cart-box {
+        width: 100%;
+    }
+
+    &_view_list .product-card__cart {
+        border-radius: 2rem;
+        padding: 0.8rem 1.2rem;
+        width: 100%;
+        height: auto;
+
+        & > span {
+            display: block;
+        }
+    }
+
+    &_view_list .product-card__footer {
+        display: none !important;
+    }
+
+    &_view_list .product-card__info {
+        grid-area: 2 / 2 / 4 / 3 !important;
+    }
+
+    &_view_list .mini-description {
+        grid-area: 5 / 2 / 9 / 3 !important;
+    }
+
+    &_view_list .product-card__body {
+        grid-template-columns: 2fr 3fr 1fr !important;
+        align-items: center !important;
+        gap: 0 1.5rem !important;
+
+        @include breakpoint($mobileMedium) {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+        }
+    }
+
+    &_view_list .product-card__image {
+        grid-area: 1 / 1 / 10 / 2 !important;
+        margin: 0 !important;
+        height: 25rem !important;
+
+        @include breakpoint($mobileMedium) {
+            width: 100%;
+        }
+    }
+
+    &_view_list .rating {
+        grid-area: 4 / 2 / 5 / 3 !important;
+    }
+
+    &_view_list .availability {
+        display: block;
+        grid-area: 3 / 3 / 4 / 4;
+
+        @include breakpoint($mobileMedium) {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &_view_list &__list {
+        grid-template-columns: 1fr;
+    }
+
+    &_view_list &__item::after {
+        display: none;
+    }
+
+    &_home &__item {
+        &:nth-child(3n)::after {
+            display: none;
+
+            @include breakpoint($mobile) {
+                display: block;
+            }
+        }
+
+        &:nth-child(even)::after {
+            @include breakpoint($mobile) {
+                display: none;
+            }
+        }
+
+        &:nth-child(odd)::after {
+            @include breakpoint($mobileMedium) {
+                display: none;
+            }
+        }
+    }
+
+    &_deals_full &__list {
+        gap: .7rem;
+        grid-template-columns: 1fr 2fr 1fr;
+
+        @include breakpoint($mobile) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint($mobileMedium) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &_deals_full &__item::after {
+        display: none;
+    }
+
+    &_deals_full &__item:first-child {
+        grid-area: 1 / 2 / 3 / 3; 
+
+        @include breakpoint($mobile) {
+            display: none;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0;
+        padding: 0;
+
+        @include breakpoint($mobile) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include breakpoint($mobileMedium) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__item {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: 15%;
+            right: 0;
+            bottom: 15%;
+            content: "";
+            display: block;
+            width: .1rem;
+            background-color: #eaeaea;
+            z-index: 20;
+        }
+    }
+}

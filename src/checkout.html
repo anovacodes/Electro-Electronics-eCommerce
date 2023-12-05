@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include("./partials/head.html", {
+        "title": "Cart - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": false
+        })
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Pages</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">FAQ</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="checkout">
+            <div class="container">
+                <form class="checkout__inner" action="#">
+                    <div class="checkout__left">
+                        <div class="checkout__header">Billing Address</div>
+
+                        <div class="form-contact__fields checkout__fields">
+                            <div class="form-contact__inline">
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">First name*</div>
+                                    <input class="input" type="text" name="firstname" minlength="3" required autocomplete="off">
+                                </div>
+
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">Lastname*</div>
+                                    <input class="input" type="text" name="lastname" minlength="3" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="form-contact__field">
+                                <div class="form-contact__label">Company Name</div>
+                                <input class="input" type="text" name="company" autocomplete="off">
+                            </div>
+
+                            <div class="form-contact__inline">
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">Email Address*</div>
+                                    <input class="input" type="email" name="email" minlength="3" required autocomplete="email">
+                                </div>
+
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">Phone Number*</div>
+                                    <input class="input" type="text" name="phone" minlength="3" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="form-contact__field">
+                                <div class="form-contact__label">Country*</div>
+                                <select name="country" id="select-country">
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="USA">USA</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="Poland">Poland</option>
+                                </select>
+                            </div>
+
+                            <div class="form-contact__field checkout__address">
+                                <div class="form-contact__label">Address*</div>
+                                <input class="input" type="text" name="street" autocomplete="off" placeholder="Street Address" required>
+                                <input class="input" type="text" name="apartment" autocomplete="off" placeholder="Apartment, Suite, Unit etc. (optional)">
+                            </div>
+
+                            <div class="form-contact__inline">
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">Post code / Zip*</div>
+                                    <input class="input" type="text" name="postal" minlength="3" required autocomplete="off">
+                                </div>
+
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">Town / City*</div>
+                                    <input class="input" type="text" name="city" minlength="3" required autocomplete="off">
+                                </div>
+                            </div>
+
+                            <div class="form-contact__field">
+                                <div class="form-contact__label">Order Notes</div>
+                                <textarea class="form-contact__textarea" name="notes"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-auth__remember checkout__checks">
+                            <input class="form-auth__checkbox" id="form-auth__checkbox" name="create" type="checkbox" value="create">
+                            <label class="form-auth__checkbox-label" for="form-auth__checkbox">Create an account?</label>
+                        </div>
+
+                        <div class="form-auth__remember checkout__checks">
+                            <input class="form-auth__checkbox" id="form-auth__checkbox-2" name="ship" type="checkbox" value="ship">
+                            <label class="form-auth__checkbox-label" for="form-auth__checkbox-2">Ship to Different Address?</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="checkout__right">
+                            <div class="checkout__header">Your Order</div>
+    
+                            <div class="checkout__order order-checkout">
+                                <div class="order-checkout__list">
+                                    <div class="order-checkout__item">
+                                        <span class="order-checkout__count">1x</span>
+                                        <a class="order-checkout__title" href="./product.html">Nerocool EN52377 Dead Silence Gaming Cube Case</a>
+                                        <span class="order-checkout__price">$110,00</span>
+                                    </div>
+
+                                    <div class="order-checkout__item">
+                                        <span class="order-checkout__count">3x</span>
+                                        <a class="order-checkout__title" href="./product.html">OLED 3D Virtual Reality TV Video</a>
+                                        <span class="order-checkout__price">$2 340,00</span>
+                                    </div>
+
+                                    <div class="order-checkout__item">
+                                        <span class="order-checkout__count">1x</span>
+                                        <a class="order-checkout__title" href="./product.html">POV Action Cam HDR-AS100V/W</a>
+                                        <span class="order-checkout__price">$90,00</span>
+                                    </div>
+                                </div>
+
+                                <div class="order-subtotal">
+                                    <ul class="order-subtotal__list">
+                                        <li class="order-subtotal__item">
+                                            <span class="order-subtotal__title">Cart Subtotal</span>
+                                            <span class="order-subtotal__text order-subtotal__text_bold">$2 434.00</span>
+                                        </li>
+
+                                        <li class="order-subtotal__item">
+                                            <span class="order-subtotal__title">Shipping</span>
+                                            <div class="order-subtotal__options">
+                                                <div class="order-subtotal__option">
+                                                    <input class="form-auth__checkbox order-checkout__checkbox" id="checkbox-2" name="shipping" type="checkbox" value="free">
+
+                                                    <label class="order-subtotal__label" for="checkbox-2">
+                                                        <span class="order-subtotal__text order-subtotal__text_bold">Free Shipping</span>
+                                                    </label>
+                                                </div>
+
+                                                <div class="order-subtotal__option">
+                                                    <input class="form-auth__checkbox order-checkout__checkbox" id="checkbox-3" name="delivery" type="checkbox" value="15">
+
+                                                    <label class="order-subtotal__label" for="checkbox-3">
+                                                        <span class="order-subtotal__text">Local Delivery</span>
+                                                        <span class="order-subtotal__text order-subtotal__text_bold">$15</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="order-total">
+                                    <div class="order-total__header">
+                                        <span class="order-total__title">Order Total</span>
+                                        <span class="order-total__price">$2 740,00</span>
+                                    </div>
+
+                                    <ul class="order-total__list">
+                                        <li class="order-total__item">
+                                            <input class="radio" type="radio" name="payment" id="radio-1" value="bank">
+
+                                            <label class="order-total__description" for="radio-1">
+                                                <span class="order-total__text_bold">Direct Bank Transfer</span>
+                                                <span class="order-total__text">In a nisi ullamcorper, fermentum erat at, ullamcorper dui. Morbi vestibulum, turpis dictum tempus placerat.</span>
+                                            </label>
+                                        </li>
+
+                                        <li class="order-total__item">
+                                            <input class="radio" type="radio" name="payment" id="radio-2" value="paypal" checked>
+
+                                            <label class="order-total__description" for="radio-2">
+                                                <span class="order-total__text_bold">PayPal System</span>
+                                            </label>
+                                        </li>
+
+                                        <li class="order-total__item">
+                                            <input class="form-auth__checkbox order-checkout__checkbox" id="checkbox-1" name="read" type="checkbox" value="read" required>
+
+                                            <label class="order-total__description" for="checkbox-1">
+                                                <span class="order-total__text">
+                                                    I've read and accept the 
+                                                    <a class="order-total__link" href="./terms-and-conditions.html">terms & conditions *</a>
+                                                </span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <button class="order-checkout__button">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+    </div>
+</body>
+</html>

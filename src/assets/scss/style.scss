@@ -1,0 +1,91 @@
+@import "fonts";
+@import "reset";
+@import "scrollbar";
+@import "mixins";
+@import "variables";
+
+body {
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: $color-dark;
+    background-color: $color-white;
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-white;
+}
+
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+@import "blocks/header";
+@import "blocks/UI/logo";
+@import "blocks/slider-pagination";
+@import "blocks/UI/burger";
+@import "blocks/menu";
+@import "blocks/sidemenu";
+@import "blocks/UI/breadcrumbs";
+@import "blocks/hero";
+@import "blocks/mini-billboards";
+@import "blocks/deals";
+@import "blocks/special-card";
+@import "blocks/tabs";
+@import "blocks/banner";
+@import "blocks/products";
+@import "blocks/product-card";
+@import "blocks/products-slider";
+@import "blocks/products-widget";
+@import "blocks/products-section";
+@import "blocks/product";
+@import "blocks/categories";
+@import "blocks/categories-section";
+@import "blocks/categories-dropdown";
+@import "blocks/sidebar";
+@import "blocks/filters";
+@import "blocks/main";
+@import "blocks/shop";
+@import "blocks/UI/view";
+@import "blocks/UI/select";
+@import "blocks/UI/pagination";
+@import "blocks/star-rating";
+@import "blocks/price-range-slider";
+@import "blocks/thumbs-slider";
+@import "blocks/product-modal";
+@import "blocks/UI/counter";
+@import "blocks/accessories";
+@import "blocks/wysiwyg-editor";
+@import "blocks/description";
+@import "blocks/specification";
+@import "blocks/reviews";
+@import "blocks/logos";
+@import "blocks/UI/input";
+@import "blocks/blogs";
+@import "blocks/blog";
+@import "blocks/comments";
+@import "blocks/tags";
+@import "blocks/about";
+@import "blocks/features";
+@import "blocks/team";
+@import "blocks/services";
+@import "blocks/accordion";
+@import "blocks/faq";
+@import "blocks/terms";
+@import "blocks/contact";
+@import "blocks/track";
+@import "blocks/auth";
+@import "blocks/map";
+@import "blocks/cart";
+@import "blocks/checkout";
+@import "blocks/UI/radio";
+@import "blocks/footer";

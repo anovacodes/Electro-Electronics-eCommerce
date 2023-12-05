@@ -1,0 +1,212 @@
+.sidebar {
+    min-width: 0;
+    background-color: $color-white;
+    padding-bottom: 3rem;
+
+    &_right {
+        @include breakpoint($tablet) {
+            left: auto !important;
+            right: 0;
+            box-shadow: -.2rem 0 .8rem rgba(0, 0, 0, .15);
+        }
+    }
+
+    &_right &__open {
+        left: auto;
+        right: 100%;
+        transform: rotate(180deg);
+    }
+
+    &.hidden &__inner {
+        display: none;
+    }
+
+    &.active {
+        @include breakpoint($tablet) {
+            width: 40%;
+        }
+
+        @include breakpoint($mobile) {
+            width: 60%;
+        }
+
+        @include breakpoint($mobileSmall) {
+            width: 75%;
+        }
+    }
+
+    &.active &__inner {
+        position: relative;
+        height: 100%;
+        overflow: hidden scroll;
+        opacity: 1;
+    }
+
+    @include breakpoint($tablet) {
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        transition: width .5s ease;
+        z-index: $z-sidebar;
+        box-shadow: .2rem 0 .8rem rgba(0, 0, 0, .15);
+    }
+
+    &__controls {
+        position: relative;
+        width: 100%;
+        height: 0;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        overflow: hidden;
+        transition: opacity .5s ease;
+        
+        @include breakpoint($tablet) {
+            opacity: 0;
+            padding: 2rem;
+        }
+    }
+
+    &__open {
+        display: none;
+        width: 4rem;
+        height: 4rem;
+        position: absolute;
+        top: 25vh;
+        left: 100%;
+        background-color: $color-dark;
+        border-top-right-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        padding: .6rem;
+        z-index: 2000;
+
+        & > svg {
+            width: 100%;
+            height: 100%;
+
+            & path {
+                fill: $color-white !important;
+            }
+        }
+
+        @include breakpoint($tablet) {
+            display: block;
+        }
+    }
+}
+
+.sidebar-blog {
+    &__text {
+        font-size: 1.4rem;
+        color: #818181;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        border-bottom: .1rem solid #ececec;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+
+    &__link {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #575560;
+        padding: 1rem 3.5rem;
+
+        &:hover,
+        &:focus {
+            font-weight: 700;
+
+            &::before {
+                margin-left: -10px;
+            }
+        }
+
+        &::before {
+            position: absolute;
+            top: 50%;
+            left: 1.6rem;
+            content: "";
+            display: block;
+            width: .9rem;
+            height: .9rem;
+            border: .1rem solid #b6b6b6;
+            border-top: none;
+            border-left: none;
+            transform: rotate(-45deg)
+                       translateY(-50%);
+            transition: margin-left .15s ease;
+        }
+    }
+}
+
+.blog-sidebar {
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        min-width: 7.5rem;
+        width: 7.5rem;
+        height: 7.5rem;
+        overflow: hidden;
+
+        & > img {
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__info {
+        align-items: center;
+    }
+
+    &__title {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 1.4rem;
+        color: #434343;
+        transition: opacity .15s ease;
+        margin-bottom: .7rem;
+
+        &:hover,
+        &:focus {
+            opacity: 0.7;
+        }
+    }
+
+    &__date {
+        font-size: 1.2rem;
+        color: #878787;
+    }
+}

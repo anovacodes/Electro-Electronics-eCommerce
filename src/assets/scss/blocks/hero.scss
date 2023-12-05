@@ -1,0 +1,190 @@
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fafafa;
+
+    @include breakpoint($tablet) {
+        display: none;
+    }
+
+    &__inner {
+        height: 42.5rem;
+        padding-left: 33rem;
+    }
+}
+
+.hero-slider {
+    height: 100%;
+    overflow: hidden;
+
+    & .swiper-slide-active &__item {
+        transition: opacity 1s ease;
+        opacity: 1;
+    }
+
+    & .swiper-slide-active &__title {
+        animation: heroTitleShow 1s ease;
+    }
+
+    & .swiper-slide-active &__subtitle {
+        animation: heroSubtitleShow 1s ease;
+    }
+
+    & .swiper-slide-active &__price {
+        animation: heroPriceShow 1s ease;
+    }
+
+    & .swiper-slide-active &__link {
+        animation: heroLinkShow 1s ease;
+    }
+
+    & .swiper-slide-active &__image {
+        animation: heroImageContainerWidth 2s ease;
+
+        & img {
+            animation: heroImageShow 1s ease;
+        }
+    }
+
+    &__item {   
+        height: 100%;
+        display: flex;
+        
+        align-items: center;
+        gap: 5rem;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    &__info {
+        flex-basis: 30%;
+    }
+
+    &__title {
+        font-size: 6.4rem;
+        font-weight: 300;
+        line-height: 0.9;
+        text-transform: uppercase;
+        color: $color-dark;
+        margin-bottom: .5rem;
+    }
+
+    &__subtitle {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $color-dark;
+        margin-bottom: 2rem;
+    }
+
+    &__price {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        color: $color-dark;
+    }
+
+    &__total {
+        display: flex;
+        align-items: flex-start;
+        gap: .2rem;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: 0.85;
+        color: $color-dark;
+        margin-bottom: 2.5rem;
+
+        & > sup {
+            font-size: 2.7rem;
+            font-weight: 700;
+            line-height: 0.9;
+            color: $color-dark;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $color-dark;
+        background-color: $color-yellow;
+        padding: 1.1rem 5rem;
+        border-radius: .8rem;
+        transition: opacity 0.15s ease;
+
+        &:hover,
+        &:focus {
+            opacity: 0.7 !important;
+        }
+    }
+
+    &__image {
+        position: relative;
+        height: 100%;
+        max-width: 47rem;
+        width: 100%;
+        overflow: hidden;
+
+        & > img {
+            max-height: 130%;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__pagination {
+        transform: translateY(-15px);
+        left: -39% !important;
+    }
+}
+
+@keyframes heroTitleShow {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}
+
+@keyframes heroSubtitleShow {
+    from {
+        opacity: 0;
+        scale: 0.75;
+    }
+}
+
+@keyframes heroPriceShow {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+}
+
+@keyframes heroLinkShow {
+    from {
+        opacity: 0;
+        scale: 0.2;
+    }
+}
+
+@keyframes heroImageContainerWidth {
+    from {
+        width: 10%;
+    }
+}
+
+// @keyframes heroImageShow {
+//     from {
+//         transform: translateX(150px);
+//     }
+// }
+
+@keyframes heroImageShow {
+    from {
+        transform: translate(150px, -50%);
+    }
+}
+
+

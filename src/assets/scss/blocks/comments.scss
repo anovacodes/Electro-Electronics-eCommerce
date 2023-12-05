@@ -1,0 +1,142 @@
+.comments {
+    &__header {
+        position: relative;
+        font-size: 2.2rem;
+        color: $color-dark;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: .1rem solid #ddd;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -.1rem;
+            width: 22.5%;
+            height: .2rem;
+            background-color: $color-yellow;
+            z-index: 10;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 5rem 0;
+    }
+}
+
+.form-comments {
+    &__title {
+        font-size: 1.6rem;
+        color: $color-dark;
+        margin-bottom: 2rem;
+    }
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    border-bottom: .1rem solid #ddd;
+    padding: 2.5rem 0;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    &__avatar {
+        display: flex;
+        max-width: 7rem;
+        aspect-ratio: 1 / 1;
+        border-radius: 50%;
+        overflow: hidden;
+
+        & > img {
+            height: 100%;
+            min-width: 100%;
+            object-fit: cover;   
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #686c6f;
+        margin: .5rem 0 2rem;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: .8rem 1.2rem;
+    }
+
+    &__author {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #686c6f;
+    }
+
+    &__date {
+        font-size: 1.3rem;
+        color: #aeaeae;
+    }
+}
+
+.comments-reviews {
+    margin-top: 4rem;
+
+    & .star-rating {
+        display: inline-block;
+    }
+
+    &__list {
+        max-height: 43rem;
+        margin: 0;
+        padding: 0;
+        overflow-y: auto;
+    }
+
+    &__item {
+        border-bottom: .1rem solid #dddddd;
+        padding: 2.5rem 0;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #686c6f;
+        margin: .5rem 0 2rem;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: .8rem 1.2rem;
+    }
+
+    &__author {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: #686c6f;
+    }
+
+    &__date {
+        font-size: 1.3rem;
+        color: #aeaeae;
+    }
+}

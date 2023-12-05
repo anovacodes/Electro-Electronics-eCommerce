@@ -1,0 +1,66 @@
+.specification {
+    padding: 2.5rem 3rem 3rem;
+
+    &__unit {
+        margin-bottom: 3.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        color: $color-dark;
+        margin-bottom: 1.8rem;
+    }
+}
+
+.table-specification {
+    width: 100%;
+    border-collapse: collapse;
+
+    &__row {
+        border-bottom: .1rem solid #ededed;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__data {
+        max-width: 0;
+        width: 60%;
+        font-size: 1.4rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        color: #686c6f;
+        padding: 0.8rem 3rem 0.8rem 0;
+
+        @include breakpoint($mobile) {
+            width: 50%;
+        }
+
+        @include breakpoint($mobileSmall) {
+            padding: 0.8rem 0;
+        }
+
+        &:first-child {
+            width: 35%;
+            font-weight: 700;
+            color: $color-dark;
+            padding: 0.8rem 2rem 0.8rem 3rem;
+
+            @include breakpoint($mobile) {
+                width: 50%;
+            }
+
+            @include breakpoint($mobileSmall) {
+                padding: 0.8rem 1.5rem 0.8rem 0;
+            }
+        }
+    }
+}
+
+

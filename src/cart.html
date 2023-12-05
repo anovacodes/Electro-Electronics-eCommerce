@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include("./partials/head.html", {
+        "title": "Cart - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": false
+        })
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Pages</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">FAQ</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cart">
+            <div class="container">
+                <div class="cart__inner">
+                    <h1 class="cart__title">Track Your Order</h1>
+                    
+
+                    <form class="cart__form form-cart" action="#">
+                        <table class="cart__table table-cart">
+                            <thead class="table-cart__header">
+                                <tr class="table-cart__row">
+                                    <th class="table-cart__title"></th>
+                                    <th class="table-cart__title"></th>
+                                    <th class="table-cart__title">Product</th>
+                                    <th class="table-cart__title">Price</th>
+                                    <th class="table-cart__title">Quantity</th>
+                                    <th class="table-cart__title">Total</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="table-cart__body">
+                                <tr class="table-cart__row">
+                                    <td class="table-cart__data">
+                                        <button class="table-cart__remove" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="12px">
+                                                <path fill-rule="evenodd"  fill="rgb(167, 167, 167)" d="M12.009,10.966 L10.975,12.002 L6.008,7.026 L1.042,12.002 L0.008,10.966 L4.974,5.990 L0.036,1.042 L1.070,0.006 L6.009,4.953 L10.947,0.006 L11.981,1.042 L7.043,5.990 L12.009,10.966 Z"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+
+                                    <td class="table-cart__data table-cart__data_image">
+                                        <a class="table-cart__image" href="./product.html">
+                                            <img src="assets/images/products/tv.png" alt="Product">
+                                        </a>
+                                    </td>
+
+                                    <td class="table-cart__data table-cart__data_title" data-title="Product">
+                                        <a class="table-cart__link" href="./product.html">
+                                            <h4 class="table-cart__name">Widescreen NX Mini F1 SMART NX</h4>
+                                        </a>
+                                    </td>
+
+                                    <td class="table-cart__data" data-title="Price">$110,40</td>
+
+                                    <td class="table-cart__data table-cart__data_quantity" data-title="Quantity">
+                                        @@include("./partials/counter.html", {
+                                            "name": "product-1"
+                                        })
+                                    </td>
+
+                                    <td class="table-cart__data" data-title="Total">$110,40</td>
+                                </tr>
+
+                                <tr class="table-cart__row">
+                                    <td class="table-cart__data">
+                                        <button class="table-cart__remove" type="button">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="12px">
+                                                <path fill-rule="evenodd"  fill="rgb(167, 167, 167)" d="M12.009,10.966 L10.975,12.002 L6.008,7.026 L1.042,12.002 L0.008,10.966 L4.974,5.990 L0.036,1.042 L1.070,0.006 L6.009,4.953 L10.947,0.006 L11.981,1.042 L7.043,5.990 L12.009,10.966 Z"/>
+                                            </svg>
+                                        </button>
+                                    </td>
+
+                                    <td class="table-cart__data table-cart__data_image">
+                                        <a class="table-cart__image" href="./product.html">
+                                            <img src="assets/images/products/smartphone-4.png" alt="Product">
+                                        </a>
+                                    </td>
+
+                                    <td class="table-cart__data table-cart__data_title" data-title="Product">
+                                        <a class="table-cart__link" href="./product.html">
+                                            <h4 class="table-cart__name">Smartphone 6S 32GB LTE</h4>
+                                        </a>
+                                    </td>
+
+                                    <td class="table-cart__data" data-title="Price">$255.00</td>
+
+                                    <td class="table-cart__data table-cart__data_quantity" data-title="Quantity">
+                                        @@include("./partials/counter.html", {
+                                            "name": "product-2"
+                                        })
+                                    </td>
+
+                                    <td class="table-cart__data" data-title="Total">$255,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="form-cart__total">
+                            <span class="form-cart__text">Free Delivery</span>
+                            <span class="form-cart__text">Total  <b>$ 440</b>  TTC</span>
+                        </div>
+
+                        <div class="form-cart__footer">
+                            <div class="form-cart__coupon">
+                                <input class="input form-cart__input" type="text" name="code" placeholder="Coupon Code">
+                                <button class="form-cart__button form-cart__button_coupon form-cart__button_dark" type="button">Apply Coupon</button>
+                            </div>
+
+                            <div class="form-cart__actions">
+                                <button class="form-cart__button form-cart__button_gray">Update Cart</button>
+                                <a class="form-cart__button" href="./checkout.html">Proceed to Checkout</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+    </div>
+</body>
+</html>

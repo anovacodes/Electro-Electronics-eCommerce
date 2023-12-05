@@ -1,0 +1,35 @@
+.about {
+    padding: 17rem 0;
+    background-color: #f5f5f5;
+    background-position: center -15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__inner {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+
+        @include breakpoint($mobile) {
+            width: 90%;
+            padding: 7rem 0;
+        }
+    }
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        color: #434343;
+        margin-bottom: 1.5rem;
+
+        @include breakpoint($mobile) {
+            font-size: 2.4rem;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: #434343;
+    }
+}

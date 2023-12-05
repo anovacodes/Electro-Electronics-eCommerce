@@ -1,0 +1,148 @@
+.contact {
+    padding: 5rem 0;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 4fr 1.5fr;
+        gap: 4rem 7rem;
+
+        @include breakpoint($mobile) {
+            grid-template-columns: 1fr;
+        }
+
+    }
+
+    &__right &__header::after {
+        width: 40%;
+    }
+
+    &__header {
+        position: relative;
+        font-size: 2.2rem;
+        color: #333e48;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 0.1rem solid #ddd;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -0.1rem;
+            width: 22.5%;
+            height: 0.2rem;
+            background-color: #fed700;
+            z-index: 10;
+        }
+    }
+
+    &__address {
+        font-size: 1.4rem;
+        font-style: normal;
+        color: #747474;
+        margin-bottom: 2rem;
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-dark;
+        margin-bottom: .7rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #747474;
+    }
+
+    &__workdays {
+        margin-bottom: 2rem;
+    }
+
+    &__workday {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        margin-bottom: .4rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__link {
+        font-size: 1.4rem;
+        color: $color-blue;
+
+        &:focus,
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.form-contact {
+    margin-top: 4rem;
+
+    &__inline {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 3rem;
+
+        @include breakpoint($mobileSmall) {
+            grid-template-columns: 1fr;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__field {
+        margin-bottom: 1.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-dark;
+        margin-bottom: .7rem;
+    }
+
+    &__textarea {
+        height: 14rem;
+        width: 100%;
+        font-size: 1.4rem;
+        color: #333e48;
+        background-color: #fff;
+        border: 0.1rem solid #dddddd;
+        border-radius: 2rem;
+        padding: 1rem 1.7rem;
+        resize: none;
+        transition: border-color 0.1s ease;
+
+        &:focus {
+            border-color: #bebebe;
+        }
+    }
+
+    &__button {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-dark;
+        background-color: $color-yellow;
+        border-radius: 3rem;
+        padding: 1.2rem 5rem;
+        margin: 2rem 0 0 auto;
+        transition: background-color .15s ease;
+
+        &:hover,
+        &:focus {
+            background-color: #ffe347;
+        }
+    }
+}

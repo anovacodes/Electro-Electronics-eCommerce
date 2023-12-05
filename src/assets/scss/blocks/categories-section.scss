@@ -1,0 +1,16 @@
+.categories-section {
+    &__inner {
+        display: grid;
+        grid-template-columns: 1fr 3.222fr;
+        gap: 1.5rem 3rem;
+        justify-content: space-between;
+
+        &_blog {
+            grid-template-columns: 3.222fr 1fr;
+        }
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

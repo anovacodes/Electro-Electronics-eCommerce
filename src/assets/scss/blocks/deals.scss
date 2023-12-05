@@ -1,0 +1,24 @@
+.deals {
+    padding-bottom: 4rem;
+    background-color: $color-white;
+
+    &_full {
+        padding-top: 3rem;
+        padding-bottom: 0;
+        background-color: #f9f9f9;
+    }
+
+    &_full &__inner {
+        display: block;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 31.624% 1fr;
+        gap: 3rem;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

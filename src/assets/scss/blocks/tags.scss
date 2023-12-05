@@ -1,0 +1,31 @@
+.tags {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: #565656;
+        background-color: $color-white;
+        border: .1rem solid #e4e5e7;
+        padding: .8rem 1.2rem;
+        transition: color .1s ease,
+                    background-color .1s ease,
+                    border-color .1s ease;
+
+        &:hover,
+        &:focus {
+            background-color: $color-dark;
+            color: $color-white;
+            border-color: $color-dark;
+        }
+    }
+}

@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include("./partials/head.html", {
+        "title": "Categories - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": false
+        })
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Laptops & Computers</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Laptops & Computers Categories</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="categories-section">
+            <div class="container">
+                <div class="categories-section__inner">
+                    <aside class="sidebar" id="sidebar">
+                        <div class="sidebar__controls">
+                            <button class="sidebar__open" type="button" id="sidebar-button" title="Sidebar">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                            <path d="M 15.205 90 c -1.104 0 -2 -0.896 -2 -2 V 55.115 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 17.205 89.104 16.31 90 15.205 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 74.795 59.357 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 55.357 C 76.795 58.462 75.899 59.357 74.795 59.357 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 45 90 c -1.104 0 -2 -0.896 -2 -2 V 27.922 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 47 89.104 46.104 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 45 29.922 c -5.464 0 -9.91 -4.445 -9.91 -9.91 s 4.445 -9.91 9.91 -9.91 c 5.465 0 9.91 4.445 9.91 9.91 S 50.465 29.922 45 29.922 z M 45 14.103 c -3.259 0 -5.91 2.651 -5.91 5.91 s 2.651 5.91 5.91 5.91 s 5.91 -2.651 5.91 -5.91 S 48.259 14.103 45 14.103 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 15.205 57.115 c -5.464 0 -9.91 -4.445 -9.91 -9.91 c 0 -5.464 4.445 -9.91 9.91 -9.91 s 9.91 4.445 9.91 9.91 C 25.115 52.67 20.669 57.115 15.205 57.115 z M 15.205 41.295 c -3.259 0 -5.91 2.651 -5.91 5.91 s 2.651 5.91 5.91 5.91 s 5.91 -2.651 5.91 -5.91 S 18.464 41.295 15.205 41.295 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 74.795 75.177 c -5.464 0 -9.909 -4.445 -9.909 -9.91 c 0 -5.464 4.445 -9.909 9.909 -9.909 c 5.465 0 9.91 4.445 9.91 9.909 C 84.705 70.731 80.26 75.177 74.795 75.177 z M 74.795 59.357 c -3.259 0 -5.909 2.65 -5.909 5.909 s 2.65 5.91 5.909 5.91 s 5.91 -2.651 5.91 -5.91 S 78.054 59.357 74.795 59.357 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 15.205 41.295 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 37.295 C 17.205 40.4 16.31 41.295 15.205 41.295 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 45 14.103 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 10.103 C 47 13.207 46.104 14.103 45 14.103 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 74.795 90 c -1.104 0 -2 -0.896 -2 -2 V 73.177 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 76.795 89.104 75.899 90 74.795 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        </g>
+                                    </svg>
+                            </button>
+                        </div>
+
+                        <div class="sidebar__inner">
+                            <div class="categories-dropdown">
+                                <div class="categories-dropdown__header">
+                                    <div class="categories-dropdown__wrapper">
+                                        <button class="categories-dropdown__button" type="button" data-type="dropdown">Show All Categories</button>
+
+                                        <ul class="categories-dropdown__list">
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Accessories</span>
+                                                    <span class="categories-dropdown__amount">(17)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Laptops & Computers</span>
+                                                    <span class="categories-dropdown__amount">(62)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Cameras & Photography</span>
+                                                    <span class="categories-dropdown__amount">(23)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Smart Phones & Tablets</span>
+                                                    <span class="categories-dropdown__amount">(8)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Video Games & Consoles</span>
+                                                    <span class="categories-dropdown__amount">(39)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">TV & Audio</span>
+                                                    <span class="categories-dropdown__amount">(12)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Gadgets</span>
+                                                    <span class="categories-dropdown__amount">(45)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="categories-dropdown__body">
+                                    <div class="categories-dropdown__collection">
+                                        <h4 class="categories-dropdown__title">
+                                            <span>Laptops & Computers</span>
+                                            <span class="categories-dropdown__amount">(2079)</span>
+                                        </h4>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Laptops</span>
+                                                    <span class="categories-dropdown__amount">(847)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Ultrabooks</span>
+                                                    <span class="categories-dropdown__amount"> (3941)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>PC Computers</span>
+                                                    <span class="categories-dropdown__amount"> (239)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Mac Computers</span>
+                                                    <span class="categories-dropdown__amount"> (72)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>All in One</span>
+                                                    <span class="categories-dropdown__amount"> (91)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Accesories</span>
+                                                    <span class="categories-dropdown__amount"> (115)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="banner banner_sidebar">
+                                <a class="banner__link" href="#">
+                                    <img class="banner__image" src="assets/images/banner.jpg" alt="Banner" >
+                                </a>
+
+                                <a class="banner__button" href="#">Start Buying</a>
+                            </div>
+
+                            <div class="products-widget products-widget_sidebar">
+                                <h3 class="products-widget__title">Latest Products</h3>
+                                
+                                <ul class="products-widget__list">
+                                    <li class="products-widget__item">
+            
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Headphones",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "product-card_small product-card_sidebar",
+                                            }
+                                        })
+            
+                                    </li>
+            
+                                    <li class="products-widget__item">
+            
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Tablets",
+                                            "title": "Wireless Audio System Multiroom 360",
+                                            "img": "assets/images/products/sounddevice.png",
+                                            "newPrice": "$419,00",
+                                            "oldPrice": "$520,00",
+                                            "classes": {
+                                                "cardType": "product-card_small product-card_sidebar"
+                                            }
+                                        })
+            
+                                    </li>
+            
+                                    <li class="products-widget__item">
+            
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Notebook Widescreen Z51-70 40K6013UPB",
+                                            "img": "assets/images/products/smartphone-1.png",
+                                            "newPrice": "$361,00",
+                                            "classes": {
+                                                "cardType": "product-card_small product-card_sidebar",
+                                            }
+                                        })
+            
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <main class="main">
+                        <div class="categories">
+                            <div class="categories__header">
+                                <h2 class="categories__title">Laptops & Computers Categories</h2>
+                            </div>
+                
+                            <div class="categories__body">
+                                <ul class="categories__list">
+                                    <li class="categories__item">
+                                        <a class="categories__image" href="#">
+                                            <img src="assets/images/products/laptop-2.png" alt="Category">
+                                        </a>
+                                        <a class="categories__link" href="#">
+                                            <h3>Laptops</h3>
+                                        </a>
+                                    </li>
+
+                                    <li class="categories__item">
+                                        <a class="categories__image" href="#">
+                                            <img src="assets/images/products/tablet-3.png" alt="Category">
+                                        </a>
+                                        <a class="categories__link" href="#">
+                                            <h3>Ultrabooks</h3>
+                                        </a>
+                                    </li>
+
+                                    <li class="categories__item">
+                                        <a class="categories__image" href="#">
+                                            <img src="assets/images/products/pc-1.png" alt="Category">
+                                        </a>
+                                        <a class="categories__link" href="#">
+                                            <h3>Dekstop PCs</h3>
+                                        </a>
+                                    </li>
+
+                                    <li class="categories__item">
+                                        <a class="categories__image" href="#">
+                                            <img src="assets/images/products/mac-pc.jpg" alt="Category">
+                                        </a>
+                                        <a class="categories__link" href="#">
+                                            <h3>Mac Computers</h3>
+                                        </a>
+                                    </li>
+
+                                    <li class="categories__item">
+                                        <a class="categories__image" href="#">
+                                            <img src="assets/images/products/controller-1.png" alt="Category">
+                                        </a>
+                                        <a class="categories__link" href="#">
+                                            <h3>All in One</h3>
+                                        </a>
+                                    </li>
+
+                                    <li class="categories__item">
+                                        <a class="categories__image" href="#">
+                                            <img src="assets/images/products/gaming.jpg" alt="Category">
+                                        </a>
+                                        <a class="categories__link" href="#">
+                                            <h3>Gaming</h3>
+                                        </a>
+                                    </li>
+
+                                    <li class="categories__item">
+                                        <a class="categories__image" href="#">
+                                            <img src="assets/images/products/headphone.png" alt="Category">
+                                        </a>
+                                        <a class="categories__link" href="#">
+                                            <h3>Accesories</h3>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+
+                        <section class="products-section">
+                            <div class="products-section__header">
+                                <h2 class="products-section__title">Bestsellers</h2>
+            
+                                <nav class="products-section__nav nav-products">
+                                    <ul class="nav-products__list">
+                                        <li class="nav-products__item active">
+                                            <a class="nav-products__link" href="#">Top 20</a>
+                                        </li>
+            
+                                        <li class="nav-products__item">
+                                            <a class="nav-products__link" href="#">Phones & Tablets</a>
+                                        </li>
+            
+                                        <li class="nav-products__item">
+                                            <a class="nav-products__link" href="#">Laptops & Computers</a>
+                                        </li>
+            
+                                        <li class="nav-products__item">
+                                            <a class="nav-products__link" href="#">Video Cameras</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+            
+                            <div class="swiper products-slider" id="products-slider-3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Tablets",
+                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                            "img": "assets/images/products/tablet-2.png",
+                                            "newPrice": "$244,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Smartphone 6S 32GB LTE",
+                                            "img": "assets/images/products/smartphone-4.png",
+                                            "newPrice": "$255,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "TV & Audio",
+                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                            "img": "assets/images/products/tv.png",
+                                            "newPrice": "$489,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartwatches",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Printers",
+                                            "title": "Full Color LaserJet Pro M452dn",
+                                            "img": "assets/images/products/printer.png",
+                                            "newPrice": "$242,15",
+                                            "oldPrice": "$312,55",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Headphones",
+                                            "title": "Purple Solo 2 Wireless",
+                                            "img": "assets/images/products/headphone.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartwatches",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Smartphone 6S 32GB LTE",
+                                            "img": "assets/images/products/smartphone-4.png",
+                                            "newPrice": "$255,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "TV & Audio",
+                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                            "img": "assets/images/products/tv.png",
+                                            "newPrice": "$489,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline",
+                                            }
+                                        })
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-pagination products-slider__pagination" id="products-slider__pagination-3"></div>
+                            </div>
+                        </section>
+
+                        <section class="products-section">
+                            <div class="products-section__header">
+                                <h2 class="products-section__title">People Buying in this Category</h2>
+            
+                                <div class="products-section-controls">
+                                    <div class="products-section-controls__arrow" id="products-section-arrow-prev"></div>
+                                    <div class="products-section-controls__arrow" id="products-section-arrow-next"></div>
+                                </div>
+                            </div>
+            
+                            <div class="swiper products-slider" id="products-slider-4">
+                                <div class="swiper-wrapper">
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Printers",
+                                            "title": "Full Color LaserJet Pro M452dn",
+                                            "img": "assets/images/products/printer.png",
+                                            "newPrice": "$242,15",
+                                            "oldPrice": "$312,55",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Headphones",
+                                            "title": "Purple Solo 2 Wireless",
+                                            "img": "assets/images/products/headphone.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartwatches",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Smartphone 6S 32GB LTE",
+                                            "img": "assets/images/products/smartphone-4.png",
+                                            "newPrice": "$255,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "TV & Audio",
+                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                            "img": "assets/images/products/tv.png",
+                                            "newPrice": "$489,00",
+                                            "classes": {
+                                                "cardType": "",
+                                            }
+                                        })
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-pagination products-slider__pagination products-slider__pagination_section" id="products-slider__pagination-4"></div>
+                            </div>
+                        </section>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+    </div>
+</body>
+</html>

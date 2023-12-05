@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    @@include("./partials/head.html", {
+        "title": "Contact Us - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": false
+        })
+
+        <div class="map" id="map"></div>
+
+        <div class="contact">
+            <div class="container">
+                <div class="contact__inner">
+                    <div class="contact__left">
+                        <h3 class="contact__header">Leave us a Message</h3>
+
+                        <p class="contact__text">Maecenas dolor elit, semper a sem sed, pulvinar molestie lacus. Aliquam dignissim, elit non mattis ultrices, neque odio ultricies tellus, eu porttitor nisl ipsum eu massa.</p>
+
+                        <form class="contact__form form-contact" action="#">
+                            <div class="form-contact__fields">
+                                <div class="form-contact__inline">
+                                    <div class="form-contact__field">
+                                        <div class="form-contact__label">First name*</div>
+                                        <input class="input" type="text" name="name" minlength="3" required autocomplete="off">
+                                    </div>
+    
+                                    <div class="form-contact__field">
+                                        <div class="form-contact__label">Last name*</div>
+                                        <input class="input" type="text" name="lastname" minlength="3" required autocomplete="off">
+                                    </div>
+                                </div>
+    
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">Subject</div>
+                                    <input class="input" type="text" name="subject" autocomplete="off">
+                                </div>
+    
+                                <div class="form-contact__field">
+                                    <div class="form-contact__label">Your Message</div>
+                                    <textarea class="form-contact__textarea" name="message"></textarea>
+                                </div>
+                            </div>
+    
+                            <button class="form-contact__button">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact__right">
+                        <h3 class="contact__header">Our Store</h3>
+
+                        <address class="contact__address">
+                            <p>17 Princess Road</p>
+                            <p>London, Greater London</p>
+                            <p>NW1 8JR, UK</p>
+                        </address>
+
+                        <h4 class="contact__label">Hours of Operation</h4>
+
+                        <div class="contact__workdays">
+                            <div class="contact__workday">
+                                <span>Monday:</span>
+                                <span>Closed</span>
+                            </div>
+                            <div class="contact__workday">
+                                <span>Tuesday:</span>
+                                <span>12-6 PM</span>
+                            </div>
+                            <div class="contact__workday">
+                                <span>Wednesday:</span>
+                                <span>12-6 PM</span>
+                            </div>
+                            <div class="contact__workday">
+                                <span>Thursday:</span>
+                                <span>12-6 PM</span>
+                            </div>
+                            <div class="contact__workday">
+                                <span>Friday:</span>
+                                <span>12-6 PM</span>
+                            </div>
+                            <div class="contact__workday">
+                                <span>Saturday:</span>
+                                <span>12-6 PM</span>
+                            </div>
+                            <div class="contact__workday">
+                                <span>Sunday:</span>
+                                <span>12-6 PM</span>
+                            </div>
+                        </div>
+
+                        <h4 class="contact__label">Careers</h4>
+
+                        <p class="contact__text">
+                            <span>If you're interested in employment opportunities at MediaCenter, please email us:</span>
+                            <a class="contact__link" href="mailto:contact@yourstore.com">contact@yourstore.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+.terms {
+    &__inner .wysiwyg-editor {
+        & h1,
+        & h2,
+        & h3,
+        & h4,
+        & h5,
+        & h6 {
+            color: #434343;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+    
+        & h1 {
+            font-size: 2.4rem;
+        }
+    
+        & h2 {
+            font-size: 2.2rem;
+        }
+    
+        & h3 {
+            font-size: 2rem;
+        }
+    
+        & h4,
+        & h5,
+        & h6 {
+            font-size: 1.7rem;
+        }
+
+        ol,
+        ul {
+            margin-bottom: 3rem;
+        }
+
+        & li {
+            color: #747474;
+        }
+    
+        & p {
+            font-size: 1.4rem;
+            color: #747474;
+            margin-bottom: 3rem;
+        }
+    
+        & a {
+            font-weight: 700;
+            color: $color-dark;
+            transition: color .1s ease;
+    
+            &:hover,
+            &:focus {
+                color: #747e88;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-align: center;
+        color: #434343;
+        margin-bottom: .4rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        text-align: center;
+        color: #747474;
+        margin-bottom: 5rem;
+    }
+}

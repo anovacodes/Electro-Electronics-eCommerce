@@ -1,0 +1,18 @@
+.input {
+    width: 100%;
+    font-size: 1.4rem;
+    color: $color-dark;
+    background-color: $color-white;
+    border: .1rem solid #dddddd;
+    border-radius: 3rem;
+    padding: 1rem 1.7rem;
+    transition: border-color .1s ease;
+
+    &::placeholder {
+        color: #818181;
+    }
+
+    &:focus {
+        border-color: #bebebe;
+    }
+}
