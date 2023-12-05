@@ -52,7 +52,13 @@
             flex-direction: column;
         }
 
-        & > button {
+        & > a {
+            display: inline-block;
+            text-align: center;
+        }
+
+        & > button,
+        & > a {
             @include breakpoint($mobile) {
                 width: 50%;
             }
