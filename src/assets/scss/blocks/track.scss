@@ -1,0 +1,58 @@
+.track {
+    padding-bottom: 5rem;
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-align: center;
+        color: #434343;
+        margin-bottom: .4rem;
+    }
+
+    &__text {
+        width: 70%;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #747474;
+        margin: 0 auto 5rem;
+
+        @include breakpoint($mobileSmall) {
+            width: 100%;
+        }
+    }
+}
+
+.form-track {
+    &__fields {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 4rem;
+
+        @include breakpoint($mobileMedium) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__label {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-dark;
+        margin-bottom: 1rem;
+    }
+
+    &__button {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-dark;
+        background-color: $color-yellow;
+        border-radius: 3rem;
+        padding: 1.2rem 5rem;
+        margin-top: 2rem;
+        transition: background-color .15s ease;
+
+        &:hover,
+        &:focus {
+            background-color: #ffe347;
+        }
+    }
+}

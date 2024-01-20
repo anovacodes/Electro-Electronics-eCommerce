@@ -1,0 +1,110 @@
+.products-section {
+    position: relative;
+    padding: 3rem 0;
+
+    &_shop {
+        padding: 0;
+    }
+
+    &_shop &__header {
+        padding-top: 0;
+    }
+
+    &_shop &__header::after {
+        width: 18%;
+    }
+
+    &__header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        border-bottom: .1rem solid #dadada;
+        padding: 1.5rem 0;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: -1px;
+            content: "";
+            display: block;
+            width: 12%;
+            height: .2rem;
+            background-color: $color-yellow;
+        }
+    }
+
+    &__title {
+        position: relative;
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: $color-dark;
+    }
+}
+
+.nav-products {
+    display: flex;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        border: .2rem solid transparent;
+        border-radius: 3rem;
+    }
+
+    &__item.active {
+        border: .2rem solid $color-yellow;
+    }
+
+    &__item.active &__link {
+        color: $color-dark;
+        padding: .4rem 2.2rem;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 1.5rem;
+        text-align: right;
+        color: #7b8186;
+        padding: .4rem 1.8rem;
+        transition: color .15s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-dark;
+        }
+    }
+}
+
+.products-section-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+    &__arrow {
+        width: 1.2rem;
+        height: 1.2rem;
+        transform: rotate(135deg);
+        border: 3px solid #ccc;
+        border-top: 0;
+        border-left: 0;
+        transition: border-color .15s ease;
+        cursor: pointer;
+        z-index: 100;
+
+        &:last-child {
+            transform: rotate(-45deg);
+        }
+
+        &:hover {
+            border-color: #9b9b9b;
+        }
+    }
+}

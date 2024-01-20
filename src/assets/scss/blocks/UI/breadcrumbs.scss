@@ -1,0 +1,90 @@
+.breadcrumbs {
+    padding: 2.5rem 0;
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: .8rem 4rem;
+        margin: 0;
+        padding: 0;
+
+        @include breakpoint($mobile) {
+            column-gap: 3rem;
+        }
+    }
+
+    &__item {
+        position: relative;
+        border-radius: .8rem;
+        background-color: #f5f5f5;
+        transition: background-color .15s ease;
+
+        &:hover {
+            background-color: #ebebeb;
+        }
+
+        &:nth-last-child(2)::after {
+            right: -3.3rem;
+        }
+
+        &:first-child:hover,
+        &:last-child:hover {
+            & > a {
+                opacity: 0.7;
+            } 
+        }
+
+        &:first-child {
+            background-color: transparent;
+
+            &::after {
+                right: -2rem;
+
+                @include breakpoint($mobile) {
+                    right: -1.5rem;
+                }
+            }
+        }
+
+        &:last-child {
+            background-color: transparent;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: -2.3rem;
+            content: "";
+            display: block;
+            width: .8rem;
+            height: .8rem;
+            border: 1px solid #989898;
+            border-top: 0;
+            border-left: 0;
+            transform: rotate(-45deg)
+                       translateY(-50%);
+
+            @include breakpoint($mobile) {
+                right: -2.2rem;
+            }
+        }
+    }
+
+    &__item:first-child &__link {
+        padding-left: 0;
+    }
+
+    &__link {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: $color-dark;
+        padding: .9rem 1.3rem;
+        transition: opacity .15s ease;
+    }
+}

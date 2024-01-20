@@ -1,0 +1,60 @@
+.counter {
+    position: relative;
+
+    &__input {
+        width: 100%;
+        font-size: 1.4rem;
+        color: #818181;
+        padding: .8rem 6rem 1rem 1.5rem;
+        background-color: $color-white;
+        border: .1rem solid #dfdfdf;
+        border-radius: 3rem;
+    }
+
+    &__controls {
+        position: absolute;
+        top: 50%;
+        right: 1rem;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+    }
+
+    &__button {
+        position: relative;
+        display: inline-block;
+        width: 2.1rem;
+        height: 2.1rem;
+        background-color: #ededed;
+        color: transparent;
+        border-radius: 50%;
+        transition: background-color .1s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $color-dark;
+        }
+
+        &:first-child::after {
+            content: "+";
+            top: 48%;
+        }
+
+        &:last-child::after {
+            content: "_";
+            top: 20%;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: #d6d4d4;
+        }
+    }
+}

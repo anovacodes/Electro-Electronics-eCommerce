@@ -1,0 +1,275 @@
+.cart {
+    padding-bottom: 5rem;
+
+    &__title {
+        font-size: 2.4rem;
+        font-weight: 400;
+        text-align: center;
+        color: #434343;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.form-cart {
+    &__total {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 2.8rem 2rem;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.2rem;
+
+        @include breakpoint($mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__coupon {
+        display: flex;
+        
+        width: 32%;
+
+        @include breakpoint($mobile) {
+            width: 100%;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        @include breakpoint($mobile) {
+            width: 100%;
+        }
+
+        @include breakpoint($mobileSmall) {
+            flex-direction: column;
+        }
+
+        & > a {
+            display: inline-block;
+            text-align: center;
+        }
+
+        & > button,
+        & > a {
+            @include breakpoint($mobile) {
+                width: 50%;
+            }
+
+            @include breakpoint($mobileSmall) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__input {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+
+        &::placeholder {
+            color: #a0a0a0;
+        }
+    }
+
+    &__button {
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: $color-dark;
+        background-color: $color-yellow;
+        border-radius: 3rem;
+        padding: 1.2rem 5rem;
+        transition: background-color .15s ease;
+
+        &:hover,
+        &:focus {
+            background-color: #ffe347;
+        }
+
+        &_coupon {
+            width: 60%;
+            padding: 0;
+            margin-top: 0;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            padding: 0 1.5rem;
+            background-color: $color-dark;
+            color: $color-white;
+        }
+
+        &_dark {
+            background-color: $color-dark;
+            color: $color-white;
+            font-weight: 400;
+
+            &:hover,
+            &:focus {
+                background-color: #7d8892;
+            }
+        }
+
+        &_gray {
+            background-color: #efecec;
+            font-weight: 400;
+
+            &:hover,
+            &:focus {
+                background-color: #f5f5f5;
+            }
+        }
+    }
+}
+
+.table-cart {
+    border-collapse: collapse;
+    width: 100%;
+
+    &__header {
+        @include breakpoint($mobile) {
+            display: none;
+        }
+    }
+
+    &__body {
+        border-top: .1rem solid #dddddd;
+        border-bottom: .1rem solid #dddddd;
+    }
+
+    &__row {
+        @include breakpoint($mobile) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: .1rem solid #dddddd;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: left;
+        color: #747474;
+        padding: .6em 1.5rem;
+    }
+
+    &__data {
+        font-size: 1.5rem;
+        color: $color-dark;
+        padding: 1.5rem;
+
+        &::before {
+            display: none;
+            content: attr(data-title) ": ";
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: $color-dark;
+
+            @include breakpoint($mobile) {
+                display: inline-block;
+            }
+        }
+
+        &:nth-child(1)::before,
+        &:nth-child(2)::before {
+            display: none;
+        }
+    
+        &:nth-child(2) {
+            @include breakpoint($mobile) {
+                display: none;
+            }
+        }
+
+        @include breakpoint($mobile) {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        &_image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_title {
+            width: 55%;
+
+            @include breakpoint($mobile) {
+                width: 100%;
+            }
+        }
+
+        &_quantity {
+            min-width: 14rem;
+            width: 14rem;
+
+            @include breakpoint($mobile) {
+                width: 100%;
+
+                & .counter {
+                    width: 10rem;
+                }
+            }
+        }
+    }
+
+    &__remove {
+        margin: 0 auto;
+        transition: opacity .1s ease;
+
+        &:hover,
+        &:focus {
+            opacity: .5;
+        }
+
+        @include breakpoint($mobile) {
+            margin: 0;
+            margin-left: auto;
+        }
+    }
+
+    &__image {
+        height: 9.2rem;
+        width: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & > img {
+            height: 100%;
+        }
+    }
+
+    &__link {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 1.6rem;
+        color: #3e3e3e;
+        transition: color .1s ease;
+
+        &:focus,
+        &:hover {
+            color: #8d8d8d;
+        }
+    }
+
+    &__name {
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,187 @@
+.blogs {
+    padding-bottom: 3rem;
+
+    &__posts {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        border-bottom: .1rem solid #eaeaea;
+        margin: 0 0 3rem;
+        padding: 0 0 3rem;
+    }
+
+    &__item {
+        &_cite {
+            color: $color-white;
+            background-color: $color-dark;
+        }
+
+        & blockquote {
+            margin: 8rem 10rem;
+
+            @include breakpoint($mobileSmall) {
+                margin: 5rem 6.5rem;
+            }
+
+            & cite {
+                font-size: 2.1rem;
+                font-style: italic;
+
+                @include breakpoint($mobileSmall) {
+                    font-size: 1.6rem;
+                }
+            }
+
+            & footer {
+                margin-top: 3rem;
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__header {
+        position: relative;
+        max-height: 46rem;
+        display: flex;
+        justify-content: center;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 2rem;
+
+        @include breakpoint($mobileSmall) {
+            max-height: 28rem;
+        }
+
+        &_iframe {
+            max-height: none;
+        }
+
+        
+    }
+
+    &__iframe {
+        &_video {
+            @include breakpoint($tablet) {
+                height: 45rem;
+            }
+
+            @include breakpoint($mobile) {
+                height: 32rem;
+            }
+
+            @include breakpoint($mobileMedium) {
+                height: 26rem;
+            }
+
+            @include breakpoint($mobileSmall) {
+                height: 22rem;
+            }
+
+            @include breakpoint($mobileDino) {
+                height: 18rem;
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 400;
+        color: #434343;
+        transition: opacity .15s ease;
+
+        &:hover,
+        &:focus {
+            opacity: .7;
+        }
+
+        & > h3 {
+            font-weight: 400;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: .8rem 2rem;
+        padding-bottom: 1.6rem;
+        border-bottom: .1rem solid #ececec;
+
+        & > span {
+            position: relative;
+            display: inline-block;
+            font-size: 1.3rem;
+            color: #878787;
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                right: -1.15rem;
+                transform: translateY(-50%);
+                content: "";
+                display: block;
+                height: .3rem;
+                width: .3rem;
+                background-color: #9f9f9f;
+                border-radius: 50%;
+            }
+
+            &:last-child::after {
+                display: none;
+            }
+        }
+    }
+
+    &__text {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        font-size: 1.4rem;
+        color: #747474;
+        margin: 1.5rem 0 2.5rem;
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: center;
+        gap: .8rem 1.5rem;
+    }
+
+    &__button {
+        display: inline-block;
+        font-size: 1.4rem;
+        color: $color-dark;
+        background-color: #f5f5f5;
+        border-radius: 3rem;
+        padding: 1.3rem 4.4rem;
+        transition: color .15s ease,
+                    background-color .15s ease;
+
+        &:hover,
+        &:focus {
+            color: $color-white;
+            background-color: $color-dark;
+        }
+    }
+
+    &__stat {
+        display: flex;
+        align-items: center;
+        gap: .7rem;
+        font-size: 1.2rem;
+        color: #878787;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

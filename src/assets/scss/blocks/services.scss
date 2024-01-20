@@ -1,0 +1,37 @@
+.services {
+    padding: 5rem 0;
+    background-color: $color-white;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: 1.75fr 1fr;
+        gap: 7rem;
+
+        @include breakpoint($mobileMedium) {
+            grid-template-columns: 1fr;
+        
+        }
+    }
+
+    &__features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+
+        @include breakpoint($tablet) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #434343;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #747474;
+    }
+}

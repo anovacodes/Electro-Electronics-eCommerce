@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include("./partials/head.html", {
+        "title": "Product - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": false
+        })
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Smartphones & Tablets</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Smartphones</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Ultra Wireless S50 Headphones S50 with Bluetooth</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="categories-section">
+            <div class="container">
+                <div class="categories-section__inner">
+                    <aside class="sidebar" id="sidebar">
+                        <div class="sidebar__controls">
+                            <button class="sidebar__open" type="button" id="sidebar-button" title="Sidebar">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="256" height="256" viewBox="0 0 256 256" xml:space="preserve">
+                                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                                            <path d="M 15.205 90 c -1.104 0 -2 -0.896 -2 -2 V 55.115 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 17.205 89.104 16.31 90 15.205 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 74.795 59.357 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 55.357 C 76.795 58.462 75.899 59.357 74.795 59.357 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 45 90 c -1.104 0 -2 -0.896 -2 -2 V 27.922 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 47 89.104 46.104 90 45 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 45 29.922 c -5.464 0 -9.91 -4.445 -9.91 -9.91 s 4.445 -9.91 9.91 -9.91 c 5.465 0 9.91 4.445 9.91 9.91 S 50.465 29.922 45 29.922 z M 45 14.103 c -3.259 0 -5.91 2.651 -5.91 5.91 s 2.651 5.91 5.91 5.91 s 5.91 -2.651 5.91 -5.91 S 48.259 14.103 45 14.103 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 15.205 57.115 c -5.464 0 -9.91 -4.445 -9.91 -9.91 c 0 -5.464 4.445 -9.91 9.91 -9.91 s 9.91 4.445 9.91 9.91 C 25.115 52.67 20.669 57.115 15.205 57.115 z M 15.205 41.295 c -3.259 0 -5.91 2.651 -5.91 5.91 s 2.651 5.91 5.91 5.91 s 5.91 -2.651 5.91 -5.91 S 18.464 41.295 15.205 41.295 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 74.795 75.177 c -5.464 0 -9.909 -4.445 -9.909 -9.91 c 0 -5.464 4.445 -9.909 9.909 -9.909 c 5.465 0 9.91 4.445 9.91 9.909 C 84.705 70.731 80.26 75.177 74.795 75.177 z M 74.795 59.357 c -3.259 0 -5.909 2.65 -5.909 5.909 s 2.65 5.91 5.909 5.91 s 5.91 -2.651 5.91 -5.91 S 78.054 59.357 74.795 59.357 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 15.205 41.295 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 37.295 C 17.205 40.4 16.31 41.295 15.205 41.295 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 45 14.103 c -1.104 0 -2 -0.896 -2 -2 V 2 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 v 10.103 C 47 13.207 46.104 14.103 45 14.103 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                            <path d="M 74.795 90 c -1.104 0 -2 -0.896 -2 -2 V 73.177 c 0 -1.104 0.896 -2 2 -2 s 2 0.896 2 2 V 88 C 76.795 89.104 75.899 90 74.795 90 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                                        </g>
+                                    </svg>
+                            </button>
+                        </div>
+
+                        <div class="sidebar__inner">
+                            <div class="categories-dropdown">
+                                <div class="categories-dropdown__header">
+                                    <div class="categories-dropdown__wrapper">
+                                        <button class="categories-dropdown__button" type="button" data-type="dropdown">Show All Categories</button>
+
+                                        <ul class="categories-dropdown__list">
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Accessories</span>
+                                                    <span class="categories-dropdown__amount">(17)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Laptops & Computers</span>
+                                                    <span class="categories-dropdown__amount">(62)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Cameras & Photography</span>
+                                                    <span class="categories-dropdown__amount">(23)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Smart Phones & Tablets</span>
+                                                    <span class="categories-dropdown__amount">(8)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Video Games & Consoles</span>
+                                                    <span class="categories-dropdown__amount">(39)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">TV & Audio</span>
+                                                    <span class="categories-dropdown__amount">(12)</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="categories-dropdown__item">
+                                                <a class="categories-dropdown__link" href="#">
+                                                    <span class="categories-dropdown__text">Gadgets</span>
+                                                    <span class="categories-dropdown__amount">(45)</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="categories-dropdown__body">
+                                    <div class="categories-dropdown__collection">
+                                        <h4 class="categories-dropdown__title">
+                                            <span>Laptops & Computers dasd asdasda sas</span>
+                                            <span class="categories-dropdown__amount">(2079)</span>
+                                        </h4>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Laptops</span>
+                                                    <span class="categories-dropdown__amount">(847)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Ultrabooks</span>
+                                                    <span class="categories-dropdown__amount"> (3941)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>PC Computers</span>
+                                                    <span class="categories-dropdown__amount"> (239)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Mac Computers</span>
+                                                    <span class="categories-dropdown__amount"> (72)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>All in One</span>
+                                                    <span class="categories-dropdown__amount"> (91)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="categories-dropdown__wrapper">
+                                            <div class="categories-dropdown__button" data-type="dropdown">
+                                                <div>
+                                                    <span>Accesories</span>
+                                                    <span class="categories-dropdown__amount"> (115)</span>
+                                                </div>
+                                            </div>
+    
+                                            <ul class="categories-dropdown__list">
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">11.6”</span>
+                                                        <span class="categories-dropdown__amount">(341)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">13.3”</span>
+                                                        <span class="categories-dropdown__amount">(248)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">14.1”</span>
+                                                        <span class="categories-dropdown__amount">(170)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">15.6”</span>
+                                                        <span class="categories-dropdown__amount">(2589)</span>
+                                                    </a>
+                                                </li>
+    
+                                                <li class="categories-dropdown__item">
+                                                    <a class="categories-dropdown__link" href="#">
+                                                        <span class="categories-dropdown__text">17.3”</span>
+                                                        <span class="categories-dropdown__amount">(9)</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="banner banner_sidebar">
+                                <a class="banner__link" href="#">
+                                    <img class="banner__image" src="assets/images/banner.jpg" alt="Banner" >
+                                </a>
+
+                                <a class="banner__button" href="#">Start Buying</a>
+                            </div>
+
+                            <div class="products-widget products-widget_sidebar">
+                                <h3 class="products-widget__title">Latest Products</h3>
+                                
+                                <ul class="products-widget__list">
+                                    <li class="products-widget__item">
+            
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Headphones",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "product-card_small product-card_sidebar",
+                                            }
+                                        })
+            
+                                    </li>
+            
+                                    <li class="products-widget__item">
+            
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Tablets",
+                                            "title": "Wireless Audio System Multiroom 360",
+                                            "img": "assets/images/products/sounddevice.png",
+                                            "newPrice": "$419,00",
+                                            "oldPrice": "$520,00",
+                                            "classes": {
+                                                "cardType": "product-card_small product-card_sidebar"
+                                            }
+                                        })
+            
+                                    </li>
+            
+                                    <li class="products-widget__item">
+            
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Notebook Widescreen Z51-70 40K6013UPB",
+                                            "img": "assets/images/products/smartphone-1.png",
+                                            "newPrice": "$361,00",
+                                            "classes": {
+                                                "cardType": "product-card_small product-card_sidebar",
+                                            }
+                                        })
+            
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </aside>
+
+                    <main class="main">
+                        <div class="product">
+                            <div class="product__inner">
+                                <div class="product__slider">
+                                    <div class="thumbs-slider">
+                                        <div class="swiper thumbs-slider__featured" id="thumbs-slider-1-1">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/1.png" alt="Image" data-id="1" data-type="featured-image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/2.jpg" alt="Image" data-id="2" data-type="featured-image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/3.jpg" alt="Image" data-id="3" data-type="featured-image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/4.jpg" alt="Image" data-id="4" data-type="featured-image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/5.jpg" alt="Image" data-id="5" data-type="featured-image">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="swiper thumbs-slider__thumbs" id="thumbs-slider-1-2">
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/1.png" alt="Image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/2.jpg" alt="Image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/3.jpg" alt="Image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/4.jpg" alt="Image">
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <img class="thumbs-slider__image" src="assets/images/products/headphones/5.jpg" alt="Image">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-button-prev" id="thumbs-left"></div>
+                                            <div class="swiper-button-next" id="thumbs-right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="product__info">
+                                    <h2 class="product__category">Smartphones</h2>
+                                    <h1 class="product__title">Ultra Wireless S50 Headphones S50 with Bluetooth</h1>
+
+                                    <div class="rating">
+                                        <div class="star-rating">
+                                            <div class="star-rating__inner">
+                                                <input class="star-rating__input" id="star-rating-20-5" name="rating-20" type="radio" value="5">
+                                                <label class="star-rating__label" for="star-rating-20-5"></label>
+                                                <input class="star-rating__input" id="star-rating-20-4" name="rating-20" type="radio" value="4">
+                                                <label class="star-rating__label" for="star-rating-20-4"></label>
+                                                <input class="star-rating__input" id="star-rating-20-3" name="rating-20" type="radio" checked value="3">
+                                                <label class="star-rating__label" for="star-rating-20-3"></label>
+                                                <input class="star-rating__input" id="star-rating-20-2" name="rating-20" type="radio" value="2">
+                                                <label class="star-rating__label" for="star-rating-20-2"></label>
+                                                <input class="star-rating__input" id="star-rating-20-1" name="rating-20" type="radio" value="1">
+                                                <label class="star-rating__label" for="star-rating-20-1"></label>
+                                            </div>
+                                        </div>
+
+                                        <div class="star-rating__count">(3)</div>
+                                    </div>
+
+                                    <div class="product__vendor">
+                                        <div class="product__brand">
+                                            <img src="./assets/images/logos/brand.png" alt="Brand Logo" />
+                                        </div>
+                                        <div class="availability">
+                                            <span>Availability:</span>
+                                            <span class="availability__status availability__status_green">In stock</span>          
+                                        </div>
+                                    </div>
+
+                                    <div class="product__actions">
+                                        <a class="product__action" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="12px">
+                                                <path fill-rule="evenodd"  fill="rgb(132, 132, 132)" d="M10.727,9.138 C10.078,9.830 9.106,10.379 7.933,10.449 C6.538,10.533 4.969,10.387 3.341,10.449 C3.277,10.906 3.332,11.488 3.314,11.993 C3.200,12.027 3.134,11.862 3.065,11.790 C2.460,11.153 1.747,10.421 1.129,9.779 C1.813,8.984 2.606,8.149 3.314,7.477 C3.314,7.992 3.314,8.506 3.314,9.021 C4.884,8.999 6.585,9.152 7.933,9.050 C9.489,8.933 10.588,7.648 10.588,5.962 C10.588,5.807 10.499,5.621 10.533,5.466 C10.581,5.248 11.388,4.590 11.584,4.330 C11.608,4.324 11.610,4.341 11.612,4.359 C12.394,6.146 11.639,8.163 10.727,9.138 ZM8.625,2.989 C7.037,3.067 5.369,2.884 3.978,2.989 C2.366,3.111 1.022,4.662 1.405,6.603 C1.053,6.979 0.725,7.382 0.326,7.710 C-0.452,5.905 0.290,3.885 1.211,2.902 C1.861,2.209 2.830,1.661 4.005,1.590 C5.400,1.507 6.969,1.652 8.597,1.590 C8.661,1.133 8.606,0.551 8.625,0.046 C8.617,-0.006 8.651,-0.014 8.652,0.017 C9.378,0.777 10.130,1.510 10.810,2.319 C10.070,3.035 9.341,3.920 8.625,4.563 C8.625,4.038 8.625,3.514 8.625,2.989 Z"/>
+                                            </svg>
+                                            <span>Compare</span>
+                                        </a>
+                                        <a class="product__action" href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="12px">
+                                                <path fill-rule="evenodd"  fill="rgb(131, 131, 131)" d="M13.704,5.376 C12.884,7.634 10.774,8.927 9.060,10.459 C8.813,10.679 8.517,10.955 8.230,11.249 C7.982,11.503 7.699,11.990 7.321,11.998 C6.994,12.005 6.769,11.673 6.530,11.411 C5.005,9.735 2.906,8.567 1.590,6.713 C0.874,5.706 0.279,3.1000 0.858,2.359 C1.309,1.082 2.408,0.110 4.080,0.010 C5.694,-0.087 6.506,0.831 7.301,1.630 C7.944,0.914 8.760,0.174 9.910,0.030 C11.899,-0.219 13.340,1.044 13.803,2.561 C14.055,3.386 14.016,4.519 13.704,5.376 ZM11.570,1.549 C11.242,1.373 10.716,1.222 10.206,1.245 C9.535,1.275 8.991,1.718 8.606,2.055 C8.428,2.211 8.192,2.420 7.993,2.642 C7.798,2.860 7.665,3.171 7.301,3.169 C6.971,3.167 6.792,2.867 6.590,2.642 C6.381,2.411 6.161,2.172 5.977,2.014 C5.583,1.678 5.010,1.222 4.258,1.245 C2.815,1.289 1.908,2.237 1.827,3.614 C1.767,4.624 2.148,5.343 2.578,5.964 C3.811,7.744 5.979,8.951 7.281,10.540 C8.534,9.205 10.018,8.162 11.353,6.794 C11.966,6.165 12.609,5.338 12.756,4.262 C12.931,2.975 12.406,1.999 11.570,1.549 Z"/>
+                                            </svg>
+                                            <span>Wishlist</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="mini-description">
+                                        <ul class="mini-description__list">
+                                            <li class="mini-description__item">
+                                                <span>4.5 inch HD Screen</span>
+                                            </li>
+                            
+                                            <li class="mini-description__item">
+                                                <span>Android 4.4 KitKat OS</span>
+                                            </li>
+                            
+                                            <li class="mini-description__item">
+                                                <span>1.4 GHz Quad Core™ Processor ads ewqeq dsad dasda dasa</span>
+                                            </li>
+                            
+                                            <li class="mini-description__item">
+                                                <span>20 MP front Camera</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="product__price">
+                                        <div class="product__new-price">$1 215,00</div>
+                                        <div class="product__old-price">$2 299,00</div>
+                                    </div>
+
+                                    <form class="product__cart-actions" action="#">
+                                        <div class="product__quantity">
+                                            <span>Quantity:</span>
+                                            
+                                            @@include("./partials/counter.html", {
+                                                "name": "quantity"
+                                            })
+                                        </div>
+
+                                        <button class="product__add-button" type="submit">
+                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="18px">
+                                                <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M18.115,7.892 C17.455,9.288 16.726,10.733 15.810,12.019 C15.489,12.470 14.946,13.159 14.455,13.300 C14.003,13.430 13.302,13.328 12.899,13.328 C11.408,13.328 9.668,13.428 8.174,13.328 C7.026,13.252 6.145,12.743 5.581,12.133 C4.951,11.454 4.731,10.524 4.515,9.457 C4.214,7.977 3.909,6.319 3.593,4.761 C3.420,3.911 3.380,2.978 2.699,2.627 C2.012,2.272 0.979,2.720 0.567,1.886 C0.567,1.573 0.567,1.260 0.567,0.947 C0.870,0.165 2.355,0.385 3.132,0.634 C3.639,0.797 4.111,1.038 4.428,1.345 C5.420,2.308 5.533,4.131 5.869,5.786 C6.028,6.570 6.218,7.402 6.387,8.205 C6.619,9.306 6.639,10.739 7.511,11.137 C8.192,11.448 9.446,11.308 10.508,11.308 C11.035,11.308 11.535,11.308 12.093,11.308 C12.559,11.308 13.281,11.426 13.677,11.308 C13.985,11.215 14.481,10.254 14.657,9.970 C15.274,8.978 15.713,8.077 16.271,6.982 C16.530,6.471 16.745,5.846 17.308,5.729 C18.105,5.563 18.661,6.162 18.518,7.010 C18.475,7.267 18.258,7.589 18.115,7.892 ZM11.430,8.177 C11.312,8.293 11.126,8.540 10.940,8.546 C10.563,8.560 10.160,7.964 9.960,7.750 C9.358,7.105 8.824,6.531 8.289,5.871 C8.092,5.628 7.589,5.156 7.655,4.818 C7.769,4.239 8.882,4.610 9.557,4.505 C9.640,3.495 9.656,2.420 9.787,1.460 C10.229,0.993 11.619,1.004 12.064,1.460 C12.165,2.441 12.233,3.455 12.265,4.505 C12.868,4.612 14.109,4.248 14.196,4.790 C14.248,5.112 13.684,5.710 13.533,5.900 C12.895,6.702 12.208,7.408 11.430,8.177 ZM7.511,14.069 C8.649,13.897 9.419,14.667 9.528,15.435 C9.823,17.503 7.169,18.018 6.330,16.601 C5.631,15.422 6.515,14.220 7.511,14.069 ZM13.735,14.069 C14.834,13.910 15.737,14.624 15.752,15.691 C15.766,16.739 14.934,17.385 14.138,17.428 C13.093,17.484 12.294,16.689 12.294,15.719 C12.294,14.816 12.932,14.185 13.735,14.069 Z"/>
+                                            </svg>
+                                            <span>Add to Cart</span>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <div class="tabs tabs_product" id="tabs-2">
+                                <div class="tabs__header">
+                                    <div class="tabs__tab" data-id="1">Accesories</div>
+                                    <div class="tabs__tab" data-id="2">Description</div>
+                                    <div class="tabs__tab" data-id="3">Specification</div>
+                                    <div class="tabs__tab active" data-id="4">Reviews</div>
+                                </div>
+                
+                                <div class="tabs__body">
+                                    <div class="tabs__item" data-id="1">
+                                        <div class="accessories">
+                                            <div class="accessories__left">
+                                                <div class="accessories__products">
+                                                    <ul class="accessories__list">
+                                                        <li class="accessories__item">
+                                                            @@include("./partials/product-card.html", {
+                                                                "collection": "Headphones",
+                                                                "title": "Ultra Wireless S50 Headphone S50 with Bluetooth",
+                                                                "img": "assets/images/products/headphones/1.png",
+                                                                "newPrice": "$1 215,00",
+                                                                "classes": {
+                                                                    "cardType": "product-card_oneline product-card_accessories product-card_disabled",
+                                                                    "productButtonType": "product-card__cart_hidden"
+                                                                }
+                                                            })
+                                                        </li>
+
+                                                        <li class="accessories__item">
+                                                            @@include("./partials/product-card.html", {
+                                                                "collection": "Devices",
+                                                                "title": "Wireless Audio System Multiroom 360",
+                                                                "img": "assets/images/products/sounddevice.png",
+                                                                "newPrice": "$419,00",
+                                                                "classes": {
+                                                                    "cardType": "product-card_oneline product-card_accessories",
+                                                                    "productButtonType": "product-card__cart_hidden"
+                                                                }
+                                                            })
+                                                        </li>
+
+                                                        <li class="accessories__item">
+                                                            @@include("./partials/product-card.html", {
+                                                                "collection": "Smartphones",
+                                                                "title": "Smartphone 6S 128GB LTE",
+                                                                "img": "assets/images/products/smartphone-3.png",
+                                                                "newPrice": "$189,20",
+                                                                "classes": {
+                                                                    "cardType": "product-card_oneline product-card_accessories",
+                                                                    "productButtonType": "product-card__cart_hidden"
+                                                                }
+                                                            })
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="accessories__extra extra-accessories">
+                                                    <ul class="extra-accessories__list">
+                                                        <li class="extra-accessories__item extra-accessories__item_chosen">
+                                                            <label class="extra-accessories__label">
+                                                                <input class="extra-accessories__checkbox" type="checkbox" name="item" checked disabled>
+                                                                <span class="extra-accessories__text">
+                                                                    <span class="extra-accessories__text_bold">This product:</span> 
+                                                                    <span>Ultra Wireless S50 Headphones S50 with Bluetooth</span>
+                                                                </span>
+                                                                <span class="extra-accessories__divide">-</span>
+                                                                <span class="extra-accessories__price">$1 215,00</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="extra-accessories__item">
+                                                            <label class="extra-accessories__label">
+                                                                <input class="extra-accessories__checkbox" type="checkbox" name="item" checked>
+                                                                <span class="extra-accessories__text">Wireless Audio System Multiroom 360</span>
+                                                                <span class="extra-accessories__divide">-</span>
+                                                                <span class="extra-accessories__price">$419,00</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="extra-accessories__item">
+                                                            <label class="extra-accessories__label">
+                                                                <input class="extra-accessories__checkbox" type="checkbox" name="item" checked>
+                                                                <span class="extra-accessories__text">Smartphone 6S 128GB LTE</span>
+                                                                <span class="extra-accessories__divide">-</span>
+                                                                <span class="extra-accessories__price">$189,20</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="accessories__right">
+                                                <div class="accessories__total">
+                                                    <div class="accessories__newprice">$1 424,00</div>
+                                                    <div class="accessories__oldprice">$2 299,00</div>
+                                                </div>
+                                                
+                                                <p class="accessories__text">For all Three items</p>
+
+                                                <button class="accessories__button" type="button">For all Three items</button>
+                                            </div>
+                                        </div>                     
+                                    </div>
+                
+                                    <div class="tabs__item" data-id="2">
+                                        <div class="description wysiwyg-editor">
+                                            <p></p>
+                            
+                                            <p>
+                                                <img src="assets/images/description/overview-title.png" alt="Image">
+                                            </p>
+
+                                            <p>
+                                                <img src="assets/images/description/macbook.jpg" alt="Image">
+                                            </p>
+
+                                            <p>A groundbreaking Retina display. Powerful dual-core and quad-core Intel processors. Fast flash storage. High-performance graphics. Great built-in apps. And now in the 13-inch model, a revolutionary new Force Touch trackpad and even longer battery life.1 Whatever you can imagine, MacBook Pro with Retina display gives you the power to create.</p>
+
+                                            <h2>Design</h2>
+                                            
+                                            <p>The design of MacBook Pro packs a lot of power into not a lot of space. Because we believe that high performance shouldn't come at the expense of portability. And despite being so compact, the new 13-inch and 15-inch MacBook Pro with Retina display models now deliver up to 10 hours and nine hours of battery life, respectively — an hour more than the previous models.</p>
+
+                                            <h2>Touchpad</h2>
+
+                                            <p>
+                                                <img src="assets/images/description/touchpad.jpg" alt="Image">
+                                            </p>
+
+                                            <p>With Multi-Touch in OS X, you can use realistic gestures like swiping or pinching to switch between apps, navigate your content and get the most out of your desktop space.</p>
+                        
+                                            <h3>Force Touch</h3>
+                            
+                                            <p>The new Force Touch trackpad takes all the capabilities of Multi-Touch and adds force sensors that detect subtle differences in the amount of downward pressure you apply. This lets you have a deeper connection to your content, bringing more functionality to your fingertip. It also introduces haptic feedback to MacBook Pro — allowing you to not just see what's happening on the screen, but to feel it.</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="tabs__item" data-id="3">
+                                        <div class="specification">
+                                            <div class="specification__unit">
+                                                <h3 class="specification__title">Technical Specs</h3>
+
+                                                <table class="specification__table table-specification">
+                                                    <tbody class="table-specification__body">
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Sound</td>
+                                                            <td class="table-specification__data">Audio</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Batteries</td>
+                                                            <td class="table-specification__data">4x AAA</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Series</td>
+                                                            <td class="table-specification__data">Mega 2</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Max Bass</td>
+                                                            <td class="table-specification__data">10 Levels</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Inputs</td>
+                                                            <td class="table-specification__data">3.5mm minijack</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="specification__unit">
+                                                <h3 class="specification__title">General</h3>
+
+                                                <table class="specification__table table-specification">
+                                                    <tbody class="table-specification__body">
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Weight dasd asdad asda dsasadasd dasasdas ads</td>
+                                                            <td class="table-specification__data">7.25 kg</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Dimensions</td>
+                                                            <td class="table-specification__data">90 x 60 x 90 cm</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Size</td>
+                                                            <td class="table-specification__data">One Size Fits All</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Color</td>
+                                                            <td class="table-specification__data">White</td>
+                                                        </tr>
+
+                                                        <tr class="table-specification__row">
+                                                            <td class="table-specification__data">Guarantee</td>
+                                                            <td class="table-specification__data">5 years</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+        
+                                    <div class="tabs__item active" data-id="4">
+                                        <div class="reviews">
+                                            <div class="reviews__header">
+                                                <div class="reviews__overall overall-reviews">
+                                                    <div class="reviews__title">Based on 3 Comments</div>
+
+                                                    <div class="overall-reviews__average">
+                                                        <span>4.3</span>
+                                                        <span>Overall</span>
+                                                    </div>
+
+                                                    <ul class="overall-reviews__list">
+                                                        <li class="overall-reviews__item">
+                                                            <div class="rating">
+                                                                <div class="star-rating">
+                                                                    <div class="star-rating__inner">
+                                                                        <input class="star-rating__input" id="star-rating-21-5" name="rating-21" type="radio" checked  value="5">
+                                                                        <label class="star-rating__label" for="star-rating-21-5"></label>
+                                                                        <input class="star-rating__input" id="star-rating-21-4" name="rating-21" type="radio" value="4">
+                                                                        <label class="star-rating__label" for="star-rating-21-4"></label>
+                                                                        <input class="star-rating__input" id="star-rating-21-3" name="rating-21" type="radio" value="3">
+                                                                        <label class="star-rating__label" for="star-rating-21-3"></label>
+                                                                        <input class="star-rating__input" id="star-rating-21-2" name="rating-21" type="radio" value="2">
+                                                                        <label class="star-rating__label" for="star-rating-21-2"></label>
+                                                                        <input class="star-rating__input" id="star-rating-21-1" name="rating-21" type="radio" value="1">
+                                                                        <label class="star-rating__label" for="star-rating-21-1"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="overall-reviews__progress">
+                                                                <div class="overall-reviews__percent" style="width: 20%;"></div>
+                                                            </div>
+
+                                                            <span class="overall-reviews__amount">1</span>
+                                                        </li>
+
+                                                        <li class="overall-reviews__item">
+                                                            <div class="rating">
+                                                                <div class="star-rating">
+                                                                    <div class="star-rating__inner">
+                                                                        <input class="star-rating__input" id="star-rating-22-5" name="rating-22" type="radio" value="5">
+                                                                        <label class="star-rating__label" for="star-rating-22-5"></label>
+                                                                        <input class="star-rating__input" id="star-rating-22-4" name="rating-22" type="radio" checked  value="4">
+                                                                        <label class="star-rating__label" for="star-rating-22-4"></label>
+                                                                        <input class="star-rating__input" id="star-rating-22-3" name="rating-22" type="radio" value="3">
+                                                                        <label class="star-rating__label" for="star-rating-22-3"></label>
+                                                                        <input class="star-rating__input" id="star-rating-22-2" name="rating-22" type="radio" value="2">
+                                                                        <label class="star-rating__label" for="star-rating-22-2"></label>
+                                                                        <input class="star-rating__input" id="star-rating-22-1" name="rating-22" type="radio" value="1">
+                                                                        <label class="star-rating__label" for="star-rating-22-1"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="overall-reviews__progress">
+                                                                <div class="overall-reviews__percent" style="width: 60%;"></div>
+                                                            </div>
+
+                                                            <span class="overall-reviews__amount">3</span>
+                                                        </li>
+
+                                                        <li class="overall-reviews__item">
+                                                            <div class="rating">
+                                                                <div class="star-rating">
+                                                                    <div class="star-rating__inner">
+                                                                        <input class="star-rating__input" id="star-rating-23-5" name="rating-23" type="radio" value="5">
+                                                                        <label class="star-rating__label" for="star-rating-23-5"></label>
+                                                                        <input class="star-rating__input" id="star-rating-23-4" name="rating-23" type="radio" value="4">
+                                                                        <label class="star-rating__label" for="star-rating-23-4"></label>
+                                                                        <input class="star-rating__input" id="star-rating-23-3" name="rating-23" type="radio" checked value="3">
+                                                                        <label class="star-rating__label" for="star-rating-23-3"></label>
+                                                                        <input class="star-rating__input" id="star-rating-23-2" name="rating-23" type="radio" value="2">
+                                                                        <label class="star-rating__label" for="star-rating-23-2"></label>
+                                                                        <input class="star-rating__input" id="star-rating-23-1" name="rating-23" type="radio" value="1">
+                                                                        <label class="star-rating__label" for="star-rating-23-1"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="overall-reviews__progress">
+                                                                <div class="overall-reviews__percent" style="width: 0%;"></div>
+                                                            </div>
+
+                                                            <span class="overall-reviews__amount">0</span>
+                                                        </li>
+
+                                                        <li class="overall-reviews__item">
+                                                            <div class="rating">
+                                                                <div class="star-rating">
+                                                                    <div class="star-rating__inner">
+                                                                        <input class="star-rating__input" id="star-rating-24-5" name="rating-24" type="radio" value="5">
+                                                                        <label class="star-rating__label" for="star-rating-24-5"></label>
+                                                                        <input class="star-rating__input" id="star-rating-24-4" name="rating-24" type="radio" value="4">
+                                                                        <label class="star-rating__label" for="star-rating-24-4"></label>
+                                                                        <input class="star-rating__input" id="star-rating-24-3" name="rating-24" type="radio" value="3">
+                                                                        <label class="star-rating__label" for="star-rating-24-3"></label>
+                                                                        <input class="star-rating__input" id="star-rating-24-2" name="rating-24" type="radio" checked  value="2">
+                                                                        <label class="star-rating__label" for="star-rating-24-2"></label>
+                                                                        <input class="star-rating__input" id="star-rating-24-1" name="rating-24" type="radio" value="1">
+                                                                        <label class="star-rating__label" for="star-rating-24-1"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="overall-reviews__progress">
+                                                                <div class="overall-reviews__percent" style="width: 0%;"></div>
+                                                            </div>
+
+                                                            <span class="overall-reviews__amount">0</span>
+                                                        </li>
+
+                                                        <li class="overall-reviews__item">
+                                                            <div class="rating">
+                                                                <div class="star-rating">
+                                                                    <div class="star-rating__inner">
+                                                                        <input class="star-rating__input" id="star-rating-25-5" name="rating-25" type="radio" value="5">
+                                                                        <label class="star-rating__label" for="star-rating-25-5"></label>
+                                                                        <input class="star-rating__input" id="star-rating-25-4" name="rating-25" type="radio" value="4">
+                                                                        <label class="star-rating__label" for="star-rating-25-4"></label>
+                                                                        <input class="star-rating__input" id="star-rating-25-3" name="rating-25" type="radio" value="3">
+                                                                        <label class="star-rating__label" for="star-rating-25-3"></label>
+                                                                        <input class="star-rating__input" id="star-rating-25-2" name="rating-25" type="radio" value="2">
+                                                                        <label class="star-rating__label" for="star-rating-25-2"></label>
+                                                                        <input class="star-rating__input" id="star-rating-25-1" name="rating-25" type="radio" checked  value="1">
+                                                                        <label class="star-rating__label" for="star-rating-25-1"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="overall-reviews__progress">
+                                                                <div class="overall-reviews__percent" style="width: 20%;"></div>
+                                                            </div>
+
+                                                            <span class="overall-reviews__amount">1</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <form class="reviews__form form-reviews" action="#">
+                                                    <div class="reviews__title">Add your Comment</div>
+
+                                                    <div class="form-reviews__fields">
+                                                        <div class="form-reviews__field">
+                                                            <span class="form-reviews__label">Rating</span>
+
+                                                            <div class="rating">
+                                                                <div class="star-rating star-rating_form">
+                                                                    <div class="star-rating__inner">
+                                                                        <input class="star-rating__input" id="star-rating-26-5" name="rating-26" type="radio" value="5">
+                                                                        <label class="star-rating__label" for="star-rating-26-5"></label>
+                                                                        <input class="star-rating__input" id="star-rating-26-4" name="rating-26" type="radio" value="4">
+                                                                        <label class="star-rating__label" for="star-rating-26-4"></label>
+                                                                        <input class="star-rating__input" id="star-rating-26-3" name="rating-26" type="radio" checked value="3">
+                                                                        <label class="star-rating__label" for="star-rating-26-3"></label>
+                                                                        <input class="star-rating__input" id="star-rating-26-2" name="rating-26" type="radio" value="2">
+                                                                        <label class="star-rating__label" for="star-rating-26-2"></label>
+                                                                        <input class="star-rating__input" id="star-rating-26-1" name="rating-26" type="radio" value="1">
+                                                                        <label class="star-rating__label" for="star-rating-26-1"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-reviews__field">
+                                                            <span class="form-reviews__label">Name</span>
+
+                                                            <input class="input" type="text" name="author" minlength="1" placeholder="Your name" required>
+                                                        </div>
+
+                                                        <div class="form-reviews__field">
+                                                            <span class="form-reviews__label">Email</span>
+
+                                                            <input class="input" type="email" name="email" minlength="1" placeholder="Your email" autocomplete="email" required>
+                                                        </div>
+
+                                                        <div class="form-reviews__field form-reviews__field_textarea">
+                                                            <span class="form-reviews__label">Review</span>
+
+                                                            <textarea class="form-reviews__textarea" name="comment" placeholder="Type your message" minlength="3" required></textarea>
+                                                        </div>
+                                                    </div>
+
+                                                    <button class="form-reviews__button" type="submit">Add Rreview</button>
+                                                </form>
+                                            </div>
+
+                                            <div class="reviews__comments comments-reviews">
+                                                <ul class="comments-reviews__list">
+                                                    <li class="comments-reviews__item">
+                                                        <div class="rating">
+                                                            <div class="star-rating">
+                                                                <div class="star-rating__inner">
+                                                                    <input class="star-rating__input" id="star-rating-27-5" name="rating-27" type="radio" value="5">
+                                                                    <label class="star-rating__label" for="star-rating-27-5"></label>
+                                                                    <input class="star-rating__input" id="star-rating-27-4" name="rating-27" type="radio" value="4">
+                                                                    <label class="star-rating__label" for="star-rating-27-4"></label>
+                                                                    <input class="star-rating__input" id="star-rating-27-3" name="rating-27" type="radio" checked value="3">
+                                                                    <label class="star-rating__label" for="star-rating-27-3"></label>
+                                                                    <input class="star-rating__input" id="star-rating-27-2" name="rating-27" type="radio" value="2">
+                                                                    <label class="star-rating__label" for="star-rating-27-2"></label>
+                                                                    <input class="star-rating__input" id="star-rating-27-1" name="rating-27" type="radio" value="1">
+                                                                    <label class="star-rating__label" for="star-rating-27-1"></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="comments-reviews__text">Fusce vitae nibh mi. Integer posuere, libero et ullamcorper facilisis, enim eros tincidunt orci, eget vestibulum sapien nisi ut leo. Cras finibus vel est ut mollis. Donec luctus condimentum ante et euismod.</p>
+
+                                                        <div class="comments-reviews__footer">
+                                                            <span class="comments-reviews__author">John Doe</span>
+                                                            <span class="comments-reviews__date">10:54  19 February 2019</span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="comments-reviews__item">
+                                                        <div class="rating">
+                                                            <div class="star-rating">
+                                                                <div class="star-rating__inner">
+                                                                    <input class="star-rating__input" id="star-rating-28-5" name="rating-28" type="radio" value="5">
+                                                                    <label class="star-rating__label" for="star-rating-28-5"></label>
+                                                                    <input class="star-rating__input" id="star-rating-28-4" name="rating-28" type="radio" value="4">
+                                                                    <label class="star-rating__label" for="star-rating-28-4"></label>
+                                                                    <input class="star-rating__input" id="star-rating-28-3" name="rating-28" type="radio" checked value="3">
+                                                                    <label class="star-rating__label" for="star-rating-28-3"></label>
+                                                                    <input class="star-rating__input" id="star-rating-28-2" name="rating-28" type="radio" value="2">
+                                                                    <label class="star-rating__label" for="star-rating-28-2"></label>
+                                                                    <input class="star-rating__input" id="star-rating-28-1" name="rating-28" type="radio" value="1">
+                                                                    <label class="star-rating__label" for="star-rating-28-1"></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="comments-reviews__text">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse eget facilisis odio. Duis sodales augue eu tincidunt faucibus. Etiam justo ligula, placerat ac augue id, volutpat porta dui.</p>
+
+                                                        <div class="comments-reviews__footer">
+                                                            <span class="comments-reviews__author">Anna Kowalsky</span>
+                                                            <span class="comments-reviews__date">15:44  13 February 2019</span>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="comments-reviews__item">
+                                                        <div class="rating">
+                                                            <div class="star-rating">
+                                                                <div class="star-rating__inner">
+                                                                    <input class="star-rating__input" id="star-rating-29-5" name="rating-29" type="radio" value="5">
+                                                                    <label class="star-rating__label" for="star-rating-29-5"></label>
+                                                                    <input class="star-rating__input" id="star-rating-29-4" name="rating-29" type="radio" value="4">
+                                                                    <label class="star-rating__label" for="star-rating-29-4"></label>
+                                                                    <input class="star-rating__input" id="star-rating-29-3" name="rating-29" type="radio" checked value="3">
+                                                                    <label class="star-rating__label" for="star-rating-29-3"></label>
+                                                                    <input class="star-rating__input" id="star-rating-29-2" name="rating-29" type="radio" value="2">
+                                                                    <label class="star-rating__label" for="star-rating-29-2"></label>
+                                                                    <input class="star-rating__input" id="star-rating-29-1" name="rating-29" type="radio" value="1">
+                                                                    <label class="star-rating__label" for="star-rating-29-1"></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <p class="comments-reviews__text">Sed id tincidunt sapien. Pellentesque cursus accumsan tellus, nec ultricies nulla sollicitudin eget. Donec feugiat orci vestibulum porttitor sagittis.</p>
+
+                                                        <div class="comments-reviews__footer">
+                                                            <span class="comments-reviews__author">Peter Wargner</span>
+                                                            <span class="comments-reviews__date">7:32  8 February 2019</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="products-section">
+                            <div class="products-section__header">
+                                <h2 class="products-section__title">Related Products</h2>
+            
+                                <div class="products-section-controls">
+                                    <div class="products-section-controls__arrow" id="products-section-arrow-prev"></div>
+                                    <div class="products-section-controls__arrow" id="products-section-arrow-next"></div>
+                                </div>
+                            </div>
+            
+                            <div class="swiper products-slider products-slider_shop" id="products-slider-6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Tablets",
+                                            "title": "Tablet White EliteBook Revolve 810 G2",
+                                            "img": "assets/images/products/tablet-2.png",
+                                            "newPrice": "$244,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline product-card_shop",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartphones",
+                                            "title": "Smartphone 6S 32GB LTE",
+                                            "img": "assets/images/products/smartphone-4.png",
+                                            "newPrice": "$255,00",
+                                            "oldPrice": "$312,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline product-card_shop",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "TV & Audio",
+                                            "title": "Widescreen NX Mini F1 SMART NX",
+                                            "img": "assets/images/products/tv.png",
+                                            "newPrice": "$489,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline product-card_shop",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Smartwatches",
+                                            "title": "Smartwatch 2.0 LTE Wifi Waterproof",
+                                            "img": "assets/images/products/watch.png",
+                                            "newPrice": "$129,00",
+                                            "oldPrice": "$1149,00",
+                                            "classes": {
+                                                "cardType": "product-card_oneline product-card_shop",
+                                            }
+                                        })
+                                    </div>
+            
+                                    <div class="swiper-slide">
+                                        @@include("./partials/product-card.html", {
+                                            "collection": "Printers",
+                                            "title": "Full Color LaserJet Pro M452dn",
+                                            "img": "assets/images/products/printer.png",
+                                            "newPrice": "$242,15",
+                                            "oldPrice": "$312,55",
+                                            "classes": {
+                                                "cardType": "product-card_oneline product-card_shop",
+                                            }
+                                        })
+                                    </div>
+                                </div>
+            
+                                <div class="swiper-pagination products-slider__pagination products-slider__pagination_section" id="products-slider__pagination-6"></div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+        @@include("./partials/product-modal.html")
+    </div>
+</body>
+</html>

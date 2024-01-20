@@ -1,0 +1,22 @@
+.products-slider {
+    padding: 1rem 1rem 5.2rem;
+    margin: -1rem;
+
+    &_shop &__pagination {
+        transform: translate(-50%, -2.6rem);
+    }
+
+    & .swiper-wrapper {
+        z-index: 50;
+    }
+
+    & .swiper-slide:hover {
+        z-index: 50;
+    }
+
+    &__pagination {
+        width: fit-content !important;
+        left: 50% !important;
+        transform: translate(-50%, -.6rem);
+    }
+}

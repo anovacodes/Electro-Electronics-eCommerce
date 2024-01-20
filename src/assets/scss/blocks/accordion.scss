@@ -1,0 +1,150 @@
+.accordion-services {
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #434343;
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 2rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__item.active &__status {
+        background-color: $color-yellow;
+        border-color: $color-yellow;
+    }
+
+    &__item.active &__status > span {
+        &:first-child {
+            display: none;
+        }
+
+        &:last-child {
+            display: block;
+        }
+    }
+
+    &__item.active &__service {
+        font-weight: 700;
+        color: $color-dark;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__header:hover &__service {
+        color: #a8a8a8;
+    }
+
+    &__item.active &__header:hover &__service {
+        color: #808d99;
+    }
+
+    &__status {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3.7rem;
+        height: 3.7rem;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #b5b5b5;
+        background-color: $color-white;
+        border: .1rem solid #a1a1a1;
+        border-radius: .4rem;
+        pointer-events: none;
+        transition: background-color .1s ease,
+                    border-color .1s ease;
+
+        & > span {
+            &:first-child {
+                display: block;
+            }
+
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+
+    &__service {
+        font-size: 1.8rem;
+        color: #797979;
+        transition: color .1s ease;
+        pointer-events: none;
+    }
+
+    &__body {
+        max-height: 0;
+        transition: max-height .2s ease;
+        overflow: hidden;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        padding: 1.5rem 0 1.5rem 5.5rem;
+        color: #747474;
+    }
+}
+
+.accordion-faq {
+    margin-bottom: 5rem;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item {
+        border-bottom: .1rem solid #dadada;
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    &__header {
+        font-size: 2.2rem;
+        color: #434343;
+        padding: 1.5rem 0;
+        cursor: pointer;
+        user-select: none;
+
+        @include breakpoint($mobileSmall) {
+            font-size: 1.8rem;
+            padding: 1rem 0;
+        }
+    }
+
+    &__body {
+        max-height: 0;
+        transition: max-height .2s ease;
+        overflow: hidden;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: #747474;
+        padding: .5rem 0 2.5rem;
+
+        @include breakpoint($mobileSmall) {
+            padding: .5rem 0 2rem;
+        }
+    }
+}
+

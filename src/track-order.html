@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include("./partials/head.html", {
+        "title": "Track Order - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": false
+        })
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Pages</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">FAQ</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="track">
+            <div class="container">
+                <div class="track__inner">
+                    <h1 class="track__title">Track Your Order</h1>
+                    <p class="track__text">To track your order please enter your Order ID in the box below and press the "Track" button. This was given to you on your receipt and in the confirmation email you should have received.</p>
+
+                    <form class="track__form form-track" action="#">
+                        <div class="form-track__fields">
+                            <div class="form-track__field">
+                                <div class="form-track__label">Order ID</div>
+                                <input class="input" type="text" name="id" autocomplete="off" placeholder="Found in your order confirmation email">
+                            </div>
+
+                            <div class="form-track__field">
+                                <div class="form-track__label">Billing Email</div>
+                                <input class="input" type="email" name="email" autocomplete="email" placeholder="Email you used during checkout">
+                            </div>
+                        </div>
+
+                        <button class="form-track__button">Track</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+    </div>
+</body>
+</html>

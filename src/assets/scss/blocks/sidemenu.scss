@@ -1,0 +1,46 @@
+.sidemenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color .5s ease;
+
+    @include breakpoint($tablet) {
+        display: block;
+    }
+
+    &.hidden {
+        z-index: $z-sidemenu;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    &.active {
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: $z-sidemenu;
+    }
+
+    &.active &__inner {
+        width: 30%;
+        opacity: 1;
+
+        @include breakpoint($tablet) {
+            width: 75%;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        width: 0%;
+        height: 100%;
+        overflow: hidden scroll;
+        opacity: 0;
+        background-color: $color-white;
+        transition: width .5s ease,
+                    opacity .5s ease;
+    }
+
+}

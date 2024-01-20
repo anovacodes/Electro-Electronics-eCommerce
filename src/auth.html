@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @@include("./partials/head.html", {
+        "title": "Auth - Electonics eCommerce"
+    })
+
+</head>
+<body>
+
+    <div class="wrapper">
+        @@include("./partials/header.html", {
+            "showMenu": false
+        })
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="index.html">Home</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <a class="breadcrumbs__link" href="#">Pages</a>
+                    </li>
+
+                    <li class="breadcrumbs__item">
+                        <span class="breadcrumbs__link">Auth</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="auth">
+            <div class="container">
+                <div class="auth__inner">
+                    <div class="auth__col">
+                        <h3 class="auth__header">Sign In</h3>
+                        <p class="auth__text">Welcome back! Sign in to Your Account</p>
+
+                        <form class="auth__form form-auth" action="#">
+                            <div class="form-auth__fields">
+                                <div class="form-auth__field">
+                                    <h4 class="form-auth__label">Username or Email Address</h4>
+                                    <input class="input" type="text" name="login" required placeholder="User Name or Email Address*">
+                                </div>
+
+                                <div class="form-auth__field">
+                                    <h4 class="form-auth__label">Password</h4>
+                                    <input class="input" type="password" name="password" required placeholder="Password*">
+                                </div>
+                            </div>
+
+                            <div class="form-auth__actions">
+                                <div class="form-auth__remember">
+                                    <input class="form-auth__checkbox" id="form-auth__checkbox" name="remember" type="checkbox" value="remember">
+                                    <label class="form-auth__checkbox-label" for="form-auth__checkbox">Remember Me</label>
+                                </div>
+
+                                <a class="form-auth__link" href="#">Forgotten Password?</a>
+                            </div>
+
+                            <button class="form-auth__button">Login</button>
+                        </form>
+                    </div>
+
+                    <div class="auth__col">
+                        <h3 class="auth__header">Create New Account</h3>
+                        <p class="auth__text">Create Your very own Electro Account</p>
+
+                        <form class="auth__form form-auth" action="#">
+                            <div class="form-auth__fields">
+                                <div class="form-auth__field">
+                                    <h4 class="form-auth__label">Username or Email Address</h4>
+                                    <input class="input" type="text" name="login" required placeholder="User Name or Email Address*">
+                                </div>
+                            </div>
+
+                            <button class="form-auth__button">Register</button>
+                        </form>
+
+                        <div class="auth__benefits benefits-auth">
+                            <div class="benefits-auth__title">Sign up today and you will be able to:</div>
+
+                            <ul class="benefits-auth__list">
+                                <li class="benefits-auth__item">
+                                    <img class="benefits-auth__icon" src="assets/images/icons/check.png" alt="Icon">
+                                    <span class="benefits-auth__text">Speed your way through the checkout</span>
+                                </li>
+
+                                <li class="benefits-auth__item">
+                                    <img class="benefits-auth__icon" src="assets/images/icons/check.png" alt="Icon">
+                                    <span class="benefits-auth__text">Track your orders easily</span>
+                                </li>
+
+                                <li class="benefits-auth__item">
+                                    <img class="benefits-auth__icon" src="assets/images/icons/check.png" alt="Icon">
+                                    <span class="benefits-auth__text">Keep a record of all your purchases</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="logos">
+            <div class="container">
+                <div class="logos__inner">
+                    <div class="swiper logos-slider" id="logos-slider">
+                        <div class="swiper-wrapper logos-slider__wrapper">
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/1.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/2.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/3.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/4.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/5.png" alt="Brand">
+                                </div>  
+                            </div>
+        
+                            <div class="swiper-slide">
+                                <div class="logos__item">
+                                    <img class="logos__image" src="assets/images/logos/6.png" alt="Brand">
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="logos__controls">
+                        <div class="logos__arrow" id="logos-arrow-prev"></div>
+                        <div class="logos__arrow" id="logos-arrow-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./partials/footer.html")
+        @@include("./partials/sidemenu.html")
+    </div>
+</body>
+</html>
