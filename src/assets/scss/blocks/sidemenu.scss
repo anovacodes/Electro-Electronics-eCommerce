@@ -1,5 +1,5 @@
 .sidemenu {
-    display: none;
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -8,10 +8,6 @@
     z-index: -1;
     background-color: rgba(0, 0, 0, 0);
     transition: background-color .5s ease;
-
-    @include breakpoint($tablet) {
-        display: block;
-    }
 
     &.hidden {
         z-index: $z-sidemenu;

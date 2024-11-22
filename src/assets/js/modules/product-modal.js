@@ -5,9 +5,7 @@ export class ProductModal {
     isClosing = false
 
     constructor() {
-        this.wrapper = document.querySelector(".wrapper")
         this.modal = document.querySelector("#product-modal")
-        this.scrollbarWidth = getScrollbarWidth()
 
         this.init()
     }
@@ -39,20 +37,16 @@ export class ProductModal {
             this.modal.classList.remove("hidden")
             this.isClosing = false
             this.swiper.destroy()
-            
+
             document.body.style.overflow = 'unset'
-            this.wrapper.style.right = 0
         }, 500)
     }
 
     open(initialSlide = 1) {
-        if (window.innerWidth > 1200) {
-            this.wrapper.style.right = `${this.scrollbarWidth / 2}px`
-        } 
         document.body.style.overflow = "hidden"
 
         this.swiper = initSwiper("#product-modal-slider", {
-            modules: [ Navigation ],
+            modules: [Navigation],
             spaceBetween: 100,
             initialSlide: initialSlide - 1,
             navigation: {
@@ -70,16 +64,3 @@ export class ProductModal {
     }
 }
 
-export function getScrollbarWidth() {
-    const scrollDiv = document.createElement("div")
-
-    scrollDiv.style.overflow = "scroll"
-
-    document.body.append(scrollDiv)
-
-    const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth
-
-    scrollDiv.remove()
-    
-    return scrollbarWidth
-}

@@ -9,6 +9,6 @@ export const burgerMenu = (selector, menu) => {
     burger.addEventListener("click", () => {
         burger.classList.toggle("active")
 
-        window.innerWidth <= 991 && sidemenu.toggle()
+        sidemenu.toggle()
     })
 }

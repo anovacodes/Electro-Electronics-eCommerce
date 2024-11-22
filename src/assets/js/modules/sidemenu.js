@@ -13,7 +13,7 @@ export class Sidemenu {
 
         this.sidemenu.addEventListener("click", event => {
             const { type } = event.target.dataset
-            
+
             if (type === "sidemenu") {
                 this.close()
             }
