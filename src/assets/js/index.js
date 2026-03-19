@@ -12,7 +12,25 @@ import { handleViewButtons } from "./modules/viewButtons.js"
 import { handleCounter } from "./modules/counter.js"
 import { specialOfferCounter } from "./modules/special-offer-counter.js"
 import { thumbsSlider } from "./modules/thumbs-slider.js"
+import { pageViewer } from "./modules/page-viewer.js"
 import "./modules/map.js"
+
+pageViewer([
+    { label: "Home", url: "./" },
+    { label: "Product", url: "./product.html" },
+    { label: "Shop", url: "./shop.html" },
+    { label: "Categories", url: "./categories.html" },
+    { label: "Cart", url: "./cart.html" },
+    { label: "Checkout", url: "./checkout.html" },
+    { label: "Contact", url: "./contact.html" },
+    { label: "Blog", url: "./blogs.html" },
+    { label: "Blog Post", url: "./blog.html" },
+    { label: "Track Order", url: "./track-order.html" },
+    { label: "Terms of Service", url: "./terms-and-conditions.html" },
+    { label: "About", url: "./about.html" },
+    { label: "Auth", url: "./auth.html" },
+    { label: "FAQ", url: "./faq.html" }
+])
 
 new SlimSelect({
     select: "#select-1",
@@ -42,10 +60,7 @@ new SlimSelect({
     }
 })
 
-burgerMenu(
-    "[data-type='burger']",
-    "[data-type='sidemenu']"
-)
+burgerMenu("[data-type='burger']", "[data-type='sidemenu']")
 
 handleSidebar()
 handleViewButtons("[data-type='view-button']", "products-shop")
@@ -77,7 +92,7 @@ function handleTabsSliders(tabsId) {
         const { id } = item.dataset
 
         initSwiper(`#products-tab-slider-${id}`, {
-            modules: [ Pagination ],
+            modules: [Pagination],
             spaceBetween: 100,
             pagination: {
                 el: `#products-tab-slider__pagination-${id}`,
@@ -90,7 +105,7 @@ function handleTabsSliders(tabsId) {
 handleTabsSliders("tabs-2")
 
 initSwiper("#hero-slider", {
-    modules: [ Pagination, Autoplay, EffectFade ],
+    modules: [Pagination, Autoplay, EffectFade],
     effect: "fade",
     spaceBetween: 100,
     loop: true,
@@ -104,7 +119,7 @@ initSwiper("#hero-slider", {
 })
 
 initSwiper("#logos-slider", {
-    modules: [ Navigation ],
+    modules: [Navigation],
     spaceBetween: 50,
     slidesPerView: 1,
     navigation: {
@@ -132,7 +147,7 @@ initSwiper("#logos-slider", {
 })
 
 initSwiper("#products-slider-1", {
-    modules: [ Pagination ],
+    modules: [Pagination],
     spaceBetween: 100,
     pagination: {
         el: "#products-slider__pagination-1",
@@ -141,7 +156,7 @@ initSwiper("#products-slider-1", {
 })
 
 initSwiper("#products-slider-2", {
-    modules: [ Pagination, Navigation ],
+    modules: [Pagination, Navigation],
     slidesPerView: 1,
     loop: true,
     pagination: {
@@ -172,7 +187,7 @@ initSwiper("#products-slider-2", {
 })
 
 initSwiper("#products-slider-3", {
-    modules: [ Pagination ],
+    modules: [Pagination],
     slidesPerView: 1,
     loop: true,
     pagination: {
@@ -196,7 +211,7 @@ initSwiper("#products-slider-3", {
 })
 
 initSwiper("#products-slider-4", {
-    modules: [ Pagination, Navigation ],
+    modules: [Pagination, Navigation],
     slidesPerView: 1,
     pagination: {
         el: "#products-slider__pagination-4",
@@ -214,7 +229,7 @@ initSwiper("#products-slider-4", {
 })
 
 initSwiper("#products-slider-5", {
-    modules: [ Pagination, Navigation ],
+    modules: [Pagination, Navigation],
     slidesPerView: 1,
     pagination: {
         el: "#products-slider__pagination-5",
@@ -235,7 +250,7 @@ initSwiper("#products-slider-5", {
 })
 
 initSwiper("#products-slider-6", {
-    modules: [ Pagination, Navigation ],
+    modules: [Pagination, Navigation],
     slidesPerView: 1,
     pagination: {
         el: "#products-slider__pagination-6",
@@ -263,10 +278,10 @@ thumbsSlider(
     "#thumbs-slider-1-2",
     {
         featuredSliderSettings: {
-            modules: [ Thumbs ]
+            modules: [Thumbs]
         },
         thumbsSliderSettings: {
-            modules: [ Navigation, FreeMode ],
+            modules: [Navigation, FreeMode],
             slidesPerView: 2,
             spaceBetween: 10,
             freeMode: true,
@@ -281,7 +296,7 @@ thumbsSlider(
                 360: {
                     slidesPerView: 3
                 }
-            }  
+            }
         }
     },
     true
